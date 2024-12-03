@@ -1,0 +1,20 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .home-page {
+    background-color: black;
+  }
+  
+  .about-page {
+    background-color: #1a1a1a;
+  }
+  
+  .not-found-page {
+    background-color: red;
+  }
+  

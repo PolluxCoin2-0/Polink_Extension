@@ -1,3 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Any global styles you want to add can go here */
+
+
 .App {
   text-align: center;
 }
