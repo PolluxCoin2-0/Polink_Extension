@@ -33,3 +33,20 @@ body {
   background-size: cover;
   background-color: black;
 }
+
+
+.animate-slide {
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+}
