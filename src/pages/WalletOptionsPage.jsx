@@ -33,7 +33,7 @@ const WalletOptionsPage = () => {
   return (
     <div className="wallet-options-page flex flex-col items-center justify-between h-screen bg-transparent p-6">
       {/* Top Logo */}
-      <div className="top-logo flex justify-center">
+      <div className="top-logo flex justify-center pt-6">
         <img
           src="/PolinkWallettext.svg"
           alt="Polink Wallet Logo"
@@ -42,7 +42,7 @@ const WalletOptionsPage = () => {
       </div>
 
       {/* Image Slider */}
-      <div className="slider flex flex-col items-center">
+      <div className="slider flex flex-col items-center pt-8">
         <div className="slider-images flex overflow-hidden w-64 h-40 mb-4">
           <img
             src="/slider1.svg"
@@ -61,7 +61,7 @@ const WalletOptionsPage = () => {
           />
         </div>
         {/* Slider Dots */}
-        <div className="slider-dots flex gap-2">
+        <div className="slider-dots flex gap-2 pt-6">
           <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
           <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
           <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
@@ -69,20 +69,19 @@ const WalletOptionsPage = () => {
       </div>
 
       {/* Text */}
-      <div className="text-container text-center mb-2">
+      <div className="text-container text-center mb-2 pt-8">
         <h2 className="text-2xl font-bold">
           <span className="text-yellow-500">Unlocking</span>
           <span className="text-white"> Potential</span>
         </h2>
-        <h3 className="text-xs font-bold">
-        <span className="text-white"> Semessly Emp=</span>
-
+        <h3 className="text-xs font-semibold px-2 py-2">
+        <span className="text-white"> Seamlessly Empowering Mainnet Tokens with POX's Full Support</span>
         </h3>
         
       </div>
 
       {/* Buttons */}
-      <div className="buttons flex justify-between gap-4 w-full max-w-xs">
+      <div className="buttons flex justify-between py-2 gap-4 w-full max-w-xs">
       <Link to="/create-wallet">
   <button
     className="option-button flex items-center justify-center px-2 py-4 rounded-xl w-30 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
