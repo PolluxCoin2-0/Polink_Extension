@@ -69,26 +69,45 @@ const WalletOptionsPage = () => {
       </div>
 
       {/* Text */}
-      <div className="text-container text-center mb-6">
-        <h2 className="text-lg font-bold">
+      <div className="text-container text-center mb-2">
+        <h2 className="text-2xl font-bold">
           <span className="text-yellow-500">Unlocking</span>
           <span className="text-white"> Potential</span>
         </h2>
+        <h3 className="text-xs font-bold">
+        <span className="text-white"> Semessly Emp=</span>
+
+        </h3>
+        
       </div>
 
       {/* Buttons */}
-      <div className="buttons flex justify-between w-full max-w-xs">
-        <Link to="/create-wallet">
-          <button className="option-button px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-32">
-            Create Wallet
-          </button>
-        </Link>
-        <Link to="/import-wallet">
-          <button className="option-button px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 w-32">
-            Import Wallet
-          </button>
-        </Link>
+      <div className="buttons flex justify-between gap-4 w-full max-w-xs">
+      <Link to="/create-wallet">
+  <button
+    className="option-button flex items-center justify-center px-2 py-4 rounded-xl w-30 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
+    style={{
+      boxShadow: "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
+    }}
+  >
+    <img src="/createico.svg" alt="Create Icon" className="w-5 h-5 mr-2" />
+    Create Wallet
+  </button>
+</Link>
+<Link to="/import-wallet">
+  <button
+    className="option-button flex  items-center justify-center px-2 py-2 rounded-xl w-30 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
+    style={{
+      boxShadow: "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
+    }}
+  >
+    <img src="/importico.svg" alt="Import Icon" className="w-5 h-5 mr-2" />
+    Import Wallet
+  </button>
+</Link>
+
       </div>
+      
     </div>
   );
 };
