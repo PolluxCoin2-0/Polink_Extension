@@ -28,6 +28,10 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import ImageSlider from "../components/ImageSlider"; 
+
+
+
 
 const WalletOptionsPage = () => {
   return (
@@ -41,8 +45,12 @@ const WalletOptionsPage = () => {
         />
       </div>
 
-      {/* Image Slider */}
-      <div className="slider flex flex-col items-center pt-8">
+      
+       {/* Image Slider */}
+       <ImageSlider />
+
+      
+      {/* <div className="slider flex flex-col items-center pt-8">
         <div className="slider-images flex overflow-hidden w-64 h-40 mb-4">
           <img
             src="/slider1.svg"
@@ -60,21 +68,48 @@ const WalletOptionsPage = () => {
             className="w-full h-full object-cover animate-slide"
           />
         </div>
-        {/* Slider Dots */}
+       
         <div className="slider-dots flex gap-2 pt-6">
           <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
           <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
           <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
         </div>
+      </div> */}
+      {/* Image Slider */}
+      {/* <div className="slider flex flex-col items-center pt-8">
+        <div className="slider-images relative w-64 h-40 overflow-hidden rounded-lg">
+          {[1, 2, 3].map((index) => (
+            <img
+              key={index}
+              src={`/slider${index}.svg`}
+              alt={`Slider ${index}`}
+              className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${
+                index === 1 ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
+        </div>
+        <div className="slider-dots flex gap-2 pt-6">
+          {[0, 1, 2].map((_, index) => (
+            <div
+              key={index}
+              className={`dot w-3 h-3 rounded-full ${
+                index === 0 ? "bg-yellow-500" : "bg-gray-400"
+              }`}
+            ></div>
+          ))}
+        </div>
       </div>
 
+       */}
+
       {/* Text */}
-      <div className="text-container text-center mb-2 pt-8">
+      <div className="text-container text-center mb-2 pt-12">
         <h2 className="text-2xl font-bold">
           <span className="text-yellow-500">Unlocking</span>
           <span className="text-white"> Potential</span>
         </h2>
-        <h3 className="text-xs font-semibold px-2 py-2">
+        <h3 className="text-xs font-semibold px-2 py-6">
         <span className="text-white"> Seamlessly Empowering Mainnet Tokens with POX's Full Support</span>
         </h3>
         
@@ -112,6 +147,7 @@ const WalletOptionsPage = () => {
 };
 
 export default WalletOptionsPage;
+
 
 /* Tailwind Styles */
 /* Add this to your global CSS or component-specific CSS */
