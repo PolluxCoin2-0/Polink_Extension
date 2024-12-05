@@ -104,22 +104,22 @@ const WalletOptionsPage = () => {
        */}
 
       {/* Text */}
-      <div className="text-container text-center mb-2 pt-12">
+      <div className="text-container text-center  pt-8">
         <h2 className="text-2xl font-bold">
           <span className="text-yellow-500">Unlocking</span>
           <span className="text-white"> Potential</span>
         </h2>
-        <h3 className="text-xs font-semibold px-2 py-6">
+        <h3 className="text-xs font-semibold px-4 py-6">
         <span className="text-white"> Seamlessly Empowering Mainnet Tokens with POX's Full Support</span>
         </h3>
         
       </div>
 
       {/* Buttons */}
-      <div className="buttons flex justify-between py-2 gap-4 w-full max-w-xs">
+      <div className="buttons flex justify-between py-2 gap-1 w-full max-w-xs">
       <Link to="/create-wallet">
   <button
-    className="option-button flex items-center justify-center px-2 py-4 rounded-xl w-30 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
+    className="option-button flex items-center justify-center px-2 py-4 rounded-xl w-40 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
     style={{
       boxShadow: "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
     }}
@@ -130,7 +130,7 @@ const WalletOptionsPage = () => {
 </Link>
 <Link to="/import-wallet">
   <button
-    className="option-button flex  items-center justify-center px-2 py-2 rounded-xl w-30 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
+    className="option-button flex  items-center justify-center px-2 py-2 rounded-xl w-40 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
     style={{
       boxShadow: "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
     }}
