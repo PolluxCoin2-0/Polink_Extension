@@ -46,16 +46,15 @@ const ImportWallet = () => {
         <div className="w-12" />
       </div>
 
-      {/* Input Section */}
+      
 
       <h2 className="text-2xs font-normal text-left flex-grow">
           Input
         </h2>
-
+      {/* Input Section */}
 
       <div className="flex flex-col items-center mt-12 w-64 max-w-md">
-        
-      
+           
         <label htmlFor="mnemonic-input" className="sr-only">
           Enter your keys
         </label>
@@ -66,7 +65,7 @@ const ImportWallet = () => {
             value={mnemonic}
             onChange={(e) => setMnemonic(e.target.value)}
             placeholder="Enter your keys"
-            className="w-full h-16 px-4 text-white text-lg rounded-md bg-black border border-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full h-32 px-4 text-white text-lg rounded-md bg-black border border-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
           <button
             onClick={handleClear}
