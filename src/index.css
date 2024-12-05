@@ -27,7 +27,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background: url('../public/bg_design.png') no-repeat center center;
   background-size: cover;
