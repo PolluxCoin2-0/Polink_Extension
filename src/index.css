@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +14,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Lato;
   width: 350px; /* Set the width */
   height: 600px; /* Set the height */
   overflow: hidden; /* Prevent scrolling */
@@ -50,3 +53,4 @@ body {
     transform: translateX(-200%);
   }
 }
+

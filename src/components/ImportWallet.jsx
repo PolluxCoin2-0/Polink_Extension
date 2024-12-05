@@ -592,19 +592,23 @@ const ImportWallet = () => {
   return (
     <div className="min-h bg-transparent text-white flex flex-col py-2">
       {/* Top Section */}
-      <div className="w-full flex items-center justify-between py-2">
-        <button onClick={() => navigate(-1)} className="w-5 h-5 mr-2">
-          <img src="/arrow-left.svg" alt="Go Back" />
-        </button>
-        <h1 className="text-x font-semibold text-center flex-grow mb-2">Import Wallet</h1>
-        <div className="w-12" />
-      </div>
+     
+<div className="w-full flex items-center justify-center py-2 relative">
+  <button 
+    onClick={() => navigate(-1)} 
+    className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-full -ml-2.5">
+    <img src="/arrow-left.svg" alt="Go Back"  />
+  </button>
+  <h1 className="text-x font-semibold text-center">Import Wallet</h1>
+</div>
 
-      <h2 className="text-2xs font-normal text-left flex-grow">Input</h2>
+<h2 className="text-2xs font-normal text-left mt-4">Input</h2>
+
+      
       {/* Input Section */}
-      <div className="flex flex-col items-center mt-4 w-72 max-w-md">
-        <div className="relative w-full h-40 p-4 border border-gray-500 rounded-2xl">
-          <h3 className="text-sm font-medium text-gray-300 mb-2 pl-4">Import Wallet</h3>
+      <div className="flex flex-col items-center mt-4 w-72 max-w-md bg-black">
+        <div className="relative w-full h-30 p-4 border border-[1px] border-[#252118] rounded-2xl">
+          <h3 className="text-sm font-medium text-neutral-400 pl-2">Import Wallet</h3>
           <label htmlFor="mnemonic-input" className="sr-only">Enter your keys</label>
           <input
           type={isMnemonicVisible? "text":"password"}
@@ -612,7 +616,7 @@ const ImportWallet = () => {
   value={ mnemonic}
   onChange={(e) => setMnemonic(e.target.value)}
   placeholder="Enter your keys"
-  className="w-full h-12 px-4 pt-2 text-white text-lg rounded-2xl bg-black border-none placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-transparent resize-none"
+  className="w-full h-10 px-2 text-white text-sm rounded-2xl bg-black border-none placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-transparent resize-none"
   style={{ lineHeight: "1.5" }}
 />
 
@@ -622,7 +626,7 @@ const ImportWallet = () => {
           <button
             type="button"
             onClick={() => setIsMnemonicVisible(!isMnemonicVisible)}
-            className="absolute top-4 right-4 text-yellow-400 text-lg"
+            className="absolute top-4 right-4 text-white text-lg"
           >
             {isMnemonicVisible ? <AiFillEye /> : <AiFillEyeInvisible />}
           </button>
@@ -630,13 +634,13 @@ const ImportWallet = () => {
           <div className="relative w-full h-10 mt-2">
             <button
               onClick={handleClear}
-              className="absolute right-20 top-1/2 transform -translate-y-1/2 text-yellow-400 text-sm font-medium hover:underline"
+              className="absolute right-20 top-1/2 transform -translate-y-1/2 text-yellow-400 text-sm font-medium"
             >
               Clear
             </button>
             <button
               onClick={handlePaste}
-              className="absolute right-6 top-1/2 transform -translate-y-1/2 text-purple-400 text-sm font-medium hover:underline"
+              className="absolute right-6 top-1/2 transform -translate-y-1/2 text-[#bdb9ff] text-sm font-medium "
             >
               Paste
             </button>
@@ -645,7 +649,7 @@ const ImportWallet = () => {
       </div>
 
       {/* Import Button */}
-      <div className="flex items-center justify-center mt-16">
+      <div className="flex items-center justify-center mt-72">
         <button
           onClick={handleImport}
           className="flex items-center justify-center px-6 py-3 rounded-xl w-full h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
