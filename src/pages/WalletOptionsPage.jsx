@@ -29,8 +29,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ImageSlider from "../components/ImageSlider"; 
+import ImportWallet from "../components/ImportWallet";
+import { Routes, Route } from "react-router-dom";
 
 
+<Routes>
+  {/* Other Routes */}
+  <Route path="/import-wallet" element={<ImportWallet />} />
+</Routes>
 
 
 const WalletOptionsPage = () => {
@@ -128,7 +134,7 @@ const WalletOptionsPage = () => {
     Create Wallet
   </button>
 </Link>
-<Link to="/import-wallet">
+<Link to="/importwallet">
   <button
     className="option-button flex  items-center justify-center px-2 py-2 rounded-xl w-40 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
     style={{
