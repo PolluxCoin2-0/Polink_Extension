@@ -7,7 +7,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Logo from "./components/Logo/Logo";
-import ImportWallet from "./components/ImportWallet";
+import ImportWallet from "./pages/ImportWallet/Import";
+import Ready from "./pages/ImportWallet/Ready";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/importwallet" element={<ImportWallet />} />
+        <Route path="/ready" element={<Ready />} />
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

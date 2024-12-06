@@ -29,7 +29,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ImageSlider from "../components/ImageSlider"; 
-import ImportWallet from "../components/ImportWallet";
+import ImportWallet from "./ImportWallet/Import";
 import { Routes, Route } from "react-router-dom";
 
 
