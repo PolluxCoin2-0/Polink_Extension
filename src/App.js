@@ -9,6 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Logo from "./components/Logo/Logo";
 import ImportWallet from "./pages/ImportWallet/Import";
 import Ready from "./pages/ImportWallet/Ready";
+import CreateWallet from "./pages/CreateWallet/Create";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/importwallet" element={<ImportWallet />} />
         <Route path="/ready" element={<Ready />} />
+        <Route path="/createwallet" element={<CreateWallet />} />
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

@@ -30,13 +30,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ImageSlider from "../components/ImageSlider"; 
 import ImportWallet from "./ImportWallet/Import";
-import { Routes, Route } from "react-router-dom";
+import CreateWallet from "./CreateWallet/Create";
 
+import { Routes, Route } from "react-router-dom";
 
 <Routes>
   {/* Other Routes */}
-  <Route path="/import-wallet" element={<ImportWallet />} />
+  <Route path="/importwallet" element={<ImportWallet />} />
+  <Route path="/createwallet" element={<CreateWallet />} />
 </Routes>
+
 
 
 const WalletOptionsPage = () => {
@@ -123,7 +126,7 @@ const WalletOptionsPage = () => {
 
       {/* Buttons */}
       <div className="buttons flex justify-between w-full">
-      <Link to="/create-wallet">
+      <Link to="/createwallet">
   <button
     className="option-button flex items-center justify-center rounded-xl w-36 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
     style={{
