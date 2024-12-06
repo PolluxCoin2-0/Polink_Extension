@@ -69,17 +69,17 @@ const Ready = () => {
         <img
           src="/images/readytick.png"
           alt="Ready Tick"
-          className="w-24 h-24 object-contain"
+          className="w-32 h-32 object-contain"
         />
       </div>
 
       {/* Heading Section */}
-      <h1 className="text-xl font-semibold text-center mt-6">
+      <h1 className="text-2xl font-semibold text-center mt-4">
         Your Wallet is <br /> <span className="text-yellow-400">Ready</span>
       </h1>
 
       {/* Proceed Button */}
-      <div className="flex items-center justify-center mt-64 w-full">
+      <div className="flex items-center justify-center mt-56 w-full">
         <Link to = "/"
           onClick={handleProceed}
           className="flex items-center justify-center mt-4 py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"

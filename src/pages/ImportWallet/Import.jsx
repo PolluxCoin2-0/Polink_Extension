@@ -156,7 +156,7 @@ const ImportWallet = () => {
   };
 
   return (
-    <div className="bg-transparent text-white flex flex-col items-center w-[350px] h-[600px] mx-auto py-6 px-4">
+    <div className="bg-transparent text-white flex flex-col w-[350px] h-[600px] mx-auto py-6 px-4">
       {/* Top Section */}
       <div className="w-full flex items-center justify-center py-2 relative">
         <button
@@ -169,7 +169,9 @@ const ImportWallet = () => {
       </div>
 
       {/* Input Section */}
-      <h2 className="text-sm font-normal text-left mt-4">Input</h2>
+      <h2 className="text-sm font-normal text-left mt-4 px-1">Input</h2>
+
+
       <div className="flex flex-col items-center mt-4 w-full bg-black">
         <div className="relative w-full h-32 p-4 border border-[1px] border-[#252118] rounded-xl">
           <h3 className="text-sm font-medium text-neutral-400">Import Wallet</h3>
