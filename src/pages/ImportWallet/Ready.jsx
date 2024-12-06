@@ -80,9 +80,9 @@ const Ready = () => {
 
       {/* Proceed Button */}
       <div className="flex items-center justify-center mt-64 w-full">
-        <Link
+        <Link to = "/"
           onClick={handleProceed}
-          className="flex items-center justify-center mt-4 py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
+          className="flex items-center justify-center mt-4 py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
           style={{
             boxShadow:
               "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
