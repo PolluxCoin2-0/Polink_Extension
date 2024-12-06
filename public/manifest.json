@@ -20,6 +20,7 @@
     "storage",
     "tabs",
     "alarms",
-    "activeTab"
+    "activeTab",
+    "clipboardWrite"
   ]
 }
