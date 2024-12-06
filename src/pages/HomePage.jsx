@@ -23,6 +23,7 @@ import Logo from '../components/Logo/Logo';
 const HomePage = () => {
   return (
     <div className="home-page">
+  
       <Logo />
     </div>
   );

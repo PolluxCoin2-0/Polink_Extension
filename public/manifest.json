@@ -1,12 +1,11 @@
 {
-  "name": "My Chrome Extension",
+  "name": "Polink",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "A Chrome extension with hash-based routing.",
+  "description": "Seamlessly Empowering Mainnet Tokens with POX's Full Support.",
   "action": {
     "default_popup": "index.html",
     "default_icon": "logo.png"
-    
   },
   "background": {
     "service_worker": "background.js"
@@ -17,6 +16,10 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": [],
-  "host_permissions": ["<all_urls>"]
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "activeTab"
+  ]
 }
