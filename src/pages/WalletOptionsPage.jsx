@@ -41,7 +41,7 @@ import { Routes, Route } from "react-router-dom";
 
 const WalletOptionsPage = () => {
   return (
-    <div className="wallet-options-page flex flex-col items-center justify-between h-screen bg-transparent p-6">
+    <div className="wallet-options-page flex flex-col items-center justify-between w-[350px] h-[600px] mx-auto py-6 px-4 bg-transparent">
       {/* Top Logo */}
       <div className="top-logo flex justify-center pt-6">
         <img
@@ -122,10 +122,10 @@ const WalletOptionsPage = () => {
       </div>
 
       {/* Buttons */}
-      <div className="buttons flex justify-between py-2 gap-1 w-full max-w-xs">
+      <div className="buttons flex justify-between w-full">
       <Link to="/create-wallet">
   <button
-    className="option-button flex items-center justify-center px-2 py-4 rounded-xl w-40 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
+    className="option-button flex items-center justify-center rounded-xl w-36 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
     style={{
       boxShadow: "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
     }}
@@ -136,7 +136,7 @@ const WalletOptionsPage = () => {
 </Link>
 <Link to="/importwallet">
   <button
-    className="option-button flex  items-center justify-center px-2 py-2 rounded-xl w-40 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
+    className="option-button flex  items-center justify-center rounded-xl w-36 h-12 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
     style={{
       boxShadow: "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
     }}

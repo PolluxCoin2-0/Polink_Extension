@@ -80,7 +80,7 @@ const Ready = () => {
 
       {/* Proceed Button */}
       <div className="flex items-center justify-center mt-64 w-full">
-        <button
+        <Link
           onClick={handleProceed}
           className="flex items-center justify-center mt-4 py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-medium hover:brightness-110"
           style={{
@@ -89,7 +89,7 @@ const Ready = () => {
           }}
         >
           Proceed
-        </button>
+        </Link>
       </div>
     </div>
   );
