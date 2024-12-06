@@ -345,8 +345,8 @@ const CreateWallet = () => {
       </div>
 
       {/* Input Section: Wallet Name */}
-      <h2 className="text-sm font-normal text-left mt-4 px-1">Wallet Name</h2>
-      <div className="flex flex-col items-center mt-2 w-full bg-black">
+      {/* <h2 className="text-sm font-normal text-left mt-4 px-1">Wallet Name</h2> */}
+      <div className="flex flex-col items-center mt-3 w-full bg-black">
         <div className="relative w-full h-16 p-4 border border-[1px] border-[#252118] rounded-xl">
           <input
             type="text"
@@ -365,8 +365,8 @@ const CreateWallet = () => {
       </div>
 
       {/* Input Section: Password */}
-      <h2 className="text-sm font-normal text-left mt-4 px-1">Set Password</h2>
-      <div className="flex flex-col items-center mt-2 w-full bg-black">
+      {/* <h2 className="text-sm font-normal text-left mt-4 px-1">Set Password</h2> */}
+      <div className="flex flex-col items-center mt-8 w-full bg-black">
         <div className="relative w-full h-16 p-4 border border-[1px] border-[#252118] rounded-xl">
           <input
             type={isPasswordVisible ? "text" : "password"}
@@ -376,7 +376,7 @@ const CreateWallet = () => {
               setErrors({ ...errors, password: "" });
             }}
             placeholder="Set your password"
-            className="w-full h-full text-white text-sm bg-black border-none placeholder-neutral-400 focus:outline-none"
+            className="w-full h-full text-white text-sm bg-transparent border-none placeholder-neutral-400 focus:outline-none"
           />
           <button
             type="button"
@@ -390,7 +390,7 @@ const CreateWallet = () => {
           )}
         </div>
         {/* Password Recommendations */}
-        <div className="grid grid-cols-2 gap-2 text-sm text-green-400 mt-2">
+        <div className="grid grid-cols-2 gap-2 text-sm text-green-400 mt-6">
           <p>Uppercase</p>
           <p>Lowercase</p>
           <p>Number</p>
@@ -399,8 +399,8 @@ const CreateWallet = () => {
       </div>
 
       {/* Input Section: Confirm Password */}
-      <h2 className="text-sm font-normal text-left mt-4 px-1">Re-enter Password</h2>
-      <div className="flex flex-col items-center mt-2 w-full bg-black">
+      {/* <h2 className="text-sm font-normal text-left mt-4 px-1">Re-enter Password</h2> */}
+      <div className="flex flex-col items-center mt-4 w-full bg-black">
         <div className="relative w-full h-16 p-4 border border-[1px] border-[#252118] rounded-xl">
           <input
             type={isConfirmPasswordVisible ? "text" : "password"}
