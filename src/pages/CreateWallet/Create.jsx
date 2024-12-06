@@ -108,10 +108,10 @@ const CreateWallet = () => {
       </div>
 
       {/* Create Wallet Button */}
-      <div className="flex items-center justify-center mt-12 w-full">
+      <div className="flex items-center justify-center mt-20 w-full">
         <button
           onClick={handleCreateWallet}
-          className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
+          className="flex items-center justify-center py-3 mt-2 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
           style={{
             boxShadow:
               "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
