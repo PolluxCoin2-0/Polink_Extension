@@ -390,13 +390,20 @@ const CreateWallet = () => {
           )}
         </div>
         {/* Password Recommendations */}
-        <div className="grid grid-cols-2 gap-2 text-sm text-green-400 mt-6">
+        
+      </div>
+
+      <div>
+
+      <p className="px-1 text-sm text-white mt-6">Please be noted that POX does not store the password 
+      andcannot retrieve it for you</p>
+      </div>
+      <div className="grid grid-cols-2 gap-2 px-1 text-sm text-green-400 mt-6">
           <p>Uppercase</p>
           <p>Lowercase</p>
           <p>Number</p>
           <p>At least 8 characters</p>
         </div>
-      </div>
 
       {/* Input Section: Confirm Password */}
       {/* <h2 className="text-sm font-normal text-left mt-4 px-1">Re-enter Password</h2> */}
@@ -426,10 +433,10 @@ const CreateWallet = () => {
       </div>
 
       {/* Create Wallet Button */}
-      <div className="flex items-center justify-center mt-20 w-full">
+      <div className="flex items-center justify-center mt-[80px] w-full">
         <button
           onClick={handleCreateWallet}
-          className="flex items-center justify-center py-3 mt-2 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
+          className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
           style={{
             boxShadow:
               "6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset",
