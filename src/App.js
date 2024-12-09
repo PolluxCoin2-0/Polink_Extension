@@ -10,6 +10,7 @@ import Logo from "./components/Logo/Logo";
 import ImportWallet from "./pages/ImportWallet/Import";
 import Ready from "./pages/ImportWallet/Ready";
 import CreateWallet from "./pages/CreateWallet/Create";
+import Backupmnemonic from "./pages/CreateWallet/Backupmnemonic";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/importwallet" element={<ImportWallet />} />
         <Route path="/ready" element={<Ready />} />
         <Route path="/createwallet" element={<CreateWallet />} />
+        <Route path="/backupmnemonics" element={<Backupmnemonic />} />
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

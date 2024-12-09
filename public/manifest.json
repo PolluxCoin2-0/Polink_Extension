@@ -21,6 +21,7 @@
     "tabs",
     "alarms",
     "activeTab",
-    "clipboardWrite"
+    "clipboardWrite",
+    "clipboardRead"
   ]
 }
