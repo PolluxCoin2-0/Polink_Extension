@@ -11,6 +11,7 @@ import ImportWallet from "./pages/ImportWallet/Import";
 import Ready from "./pages/ImportWallet/Ready";
 import CreateWallet from "./pages/CreateWallet/Create";
 import Backupmnemonic from "./pages/CreateWallet/Backupmnemonic";
+import VerifyMnemonic from "./pages/CreateWallet/VerifyMnemonic";
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
         <Route path="/ready" element={<Ready />} />
         <Route path="/createwallet" element={<CreateWallet />} />
         <Route path="/backupmnemonics" element={<Backupmnemonic />} />
-        <Route path="/backupmnemonics" element={<Backupmnemonic />} />
+        <Route path="/verify-mnemonic" element={<VerifyMnemonic />} />
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
