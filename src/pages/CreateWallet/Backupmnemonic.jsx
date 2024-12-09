@@ -39,6 +39,14 @@ const BackupMnemonic = () => {
         <div className="bg-[#1a1a1a] text-center p-4 rounded-md w-full text-sm text-white">
           {mnemonic}
         </div>
+        <button
+  onClick={copyToClipboard}
+  className="mt-4 px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
+>
+  <FiCopy className="text-lg" />
+  Copy Mnemonic
+</button>
+
         
       </div>
 
