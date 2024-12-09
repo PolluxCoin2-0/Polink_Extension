@@ -71,13 +71,13 @@ const BackupMnemonic = () => {
 
 
             {isQrVisible && (
-                <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-                    <div className="bg-white text-black p-6 rounded-lg relative w-[300px] text-center">
+                <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-md flex items-center justify-center">
+                    <div className="bg-[#1e1e1e] text-white p-6 rounded-lg relative w-[300px] text-center">
                         <h2 className="text-lg font-semibold mb-4">Mnemonic QR Code</h2>
                         <QRCodeCanvas value={mnemonic} size={200} />
                         <button
                             onClick={() => setIsQrVisible(false)}
-                            className="mt-4 px-4 py-2 bg-gradient-to-r from-red-400 to-yellow-200 text-black font-semibold rounded-lg hover:brightness-110"
+                            className="mt-4 px-4 py-2 bg-gradient-to-r w-full from-red-400 to-yellow-200 text-black font-semibold rounded-lg hover:brightness-110"
                         >
                             Close
                         </button>
