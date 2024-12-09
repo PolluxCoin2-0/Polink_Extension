@@ -4,6 +4,7 @@ import { generateMnemonic } from "bip39";
 import { QRCodeCanvas } from "qrcode.react";
 import { Buffer } from "buffer";
 import { FiCopy } from "react-icons/fi";
+import { BsQrCodeScan } from "react-icons/bs";
 
 
 // Polyfill Buffer for Webpack 5+
