@@ -290,6 +290,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const CreateWallet = () => {
   const [walletName, setWalletName] = useState("");
@@ -439,7 +440,7 @@ const CreateWallet = () => {
 
       {/* Create Wallet Button */}
       <div className="flex items-center justify-center mt-[80px] w-full">
-        <button
+        <Link to ="/backupmnemonics"
           onClick={handleCreateWallet}
           className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
           style={{
@@ -448,7 +449,7 @@ const CreateWallet = () => {
           }}
         >
           Create Wallet
-        </button>
+        </Link>
       </div>
     </div>
   );
