@@ -94,7 +94,7 @@ const BackupMnemonic = () => {
 
             {/* Already Backup Button */}
             <div className="flex items-center justify-center mt-[70px] w-full">
-                <button
+                <Link
                     onClick={() => navigate("/verify-mnemonic")}
                     className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
                     style={{
@@ -103,7 +103,7 @@ const BackupMnemonic = () => {
                     }}
                 >
                     Already Backup
-                </button>
+                </Link>
             </div>
         </div>
     );
