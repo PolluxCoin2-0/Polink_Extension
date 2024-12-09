@@ -1,63 +1,85 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const VerifyMnemonic = () => {
-  const [mnemonic, setMnemonic] = useState('');
-  const [error, setError] = useState('');
-  const navigate = useNavigate();
+    const location = useLocation();
+    const navigate = useNavigate();
+    const mnemonicWords = location.state?.mnemonic.split(" ") || [];
+    const [selectedIndices, setSelectedIndices] = useState([]);
+    const [options, setOptions] = useState([[], [], []]);
+    const [userSelections, setUserSelections] = useState(["", "", ""]);
 
-  const handleVerifyMnemonic = () => {
-    // Simple check for mnemonic validation; customize as needed
-    if (mnemonic.trim().split(/\s+/).length < 12) {
-      setError('Please enter a valid 12-word mnemonic phrase.');
-      return;
-    }
+    useEffect(() => {
+        // Generate 3 random unique indices
+        const indices = Array.from({ length: 12 }, (_, i) => i);
+        indices.sort(() => Math.random() - 0.5);
+        const selected = indices.slice(0, 3);
+        setSelectedIndices(selected);
 
-    // Clear error if mnemonic is valid
-    setError('');
+        // Generate options for each selected index
+        const newOptions = selected.map((index) => {
+            const correctWord = mnemonicWords[index];
+            const shuffled = [...mnemonicWords].sort(() => Math.random() - 0.5);
+            const choices = [correctWord];
+            for (const word of shuffled) {
+                if (choices.length === 3) break;
+                if (!choices.includes(word)) choices.push(word);
+            }
+            return choices.sort(() => Math.random() - 0.5);
+        });
+        setOptions(newOptions);
+    }, [mnemonicWords]);
 
-    // Proceed to next page if mnemonic is valid
-    navigate('/next-page');
-  };
+    const verifyMnemonic = () => {
+        const isCorrect = selectedIndices.every(
+            (index, i) => mnemonicWords[index] === userSelections[i]
+        );
+        if (isCorrect) {
+            alert("Verification Successful!");
+            navigate("/dashboard");
+        } else {
+            alert("Verification Failed!");
+        }
+    };
 
-  return (
-    <div className="bg-transparent text-white flex flex-col items-center w-[350px] h-[600px] mx-auto py-6 px-4">
-      {/* Heading Section */}
-      <h1 className="text-2xl font-semibold text-center mt-4">
-        Verify Your <span className="text-yellow-400">Mnemonic</span>
-      </h1>
-
-      {/* Input Section */}
-      <div className="mt-6 w-full">
-        <label htmlFor="mnemonic" className="block text-sm font-medium mb-2">
-          Enter Your Mnemonic Phrase
-        </label>
-        <input
-          type="text"
-          id="mnemonic"
-          placeholder="Enter 12-word phrase"
-          value={mnemonic}
-          onChange={(e) => setMnemonic(e.target.value)}
-          className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-yellow-400"
-        />
-        {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
-      </div>
-
-      {/* Verify Button */}
-      <div className="flex items-center justify-center mt-6 w-full">
-        <button
-          onClick={handleVerifyMnemonic}
-          className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
-          style={{
-            boxShadow:
-              '6px 0px 8px 0px #FFFFFF40 inset, -6px 0px 8px 0px #00000040 inset',
-          }}
-        >
-          Verify
-        </button>
-      </div>
-    </div>
-  );
+    return (
+        <div className="bg-transparent text-white flex flex-col w-[350px] h-[600px] mx-auto py-6 px-4">
+            <h1 className="text-lg font-semibold mb-4">Verify Mnemonic</h1>
+            <div className="flex flex-col gap-4">
+                {selectedIndices.map((index, i) => (
+                    <div key={i} className="flex flex-col gap-2">
+                        <p className="text-sm">
+                            Select the word for position <b>{index + 1}</b>
+                        </p>
+                        <select
+                            value={userSelections[i]}
+                            onChange={(e) =>
+                                setUserSelections((prev) => {
+                                    const updated = [...prev];
+                                    updated[i] = e.target.value;
+                                    return updated;
+                                })
+                            }
+                            className="bg-[#1e1e1e] text-white p-2 rounded"
+                        >
+                            <option value="">Select a word</option>
+                            {options[i].map((word, j) => (
+                                <option key={j} value={word}>
+                                    {word}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                ))}
+            </div>
+            <button
+                onClick={verifyMnemonic}
+                className="mt-6 px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold rounded-lg"
+            >
+                Verify
+            </button>
+        </div>
+    );
 };
 
 export default VerifyMnemonic;
