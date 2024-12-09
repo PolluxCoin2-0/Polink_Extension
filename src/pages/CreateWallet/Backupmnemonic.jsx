@@ -24,6 +24,7 @@ const BackupMnemonic = () => {
 
     return (
         <div className="bg-transparent text-white flex flex-col w-[350px] h-[600px] mx-auto py-6 px-4">
+
             {/* Top Section */}
             <div className="w-full flex items-center justify-center py-2 relative">
                 <button
@@ -35,9 +36,18 @@ const BackupMnemonic = () => {
                 <h1 className="text-lg font-semibold">Backup Mnemonic</h1>
             </div>
 
+
+
+            <div className="flex items-center bg-transparent justify-center">
+                <p className="px-4 text-sm text-white bg-transparent text-center leading-relaxed mt-6">
+                    Please write down the following words in the correct order.
+                </p>
+            </div>
+
+
             {/* Mnemonic Section */}
-            <div className="flex flex-col items-center mt-8 w-full bg-[#1e1e1e] p-4 rounded-xl border border-[#252118]">
-                <p className="text-sm font-semibold mb-4">Your Mnemonic:</p>
+            <div className="flex flex-col items-center mt-4 w-full bg-[#1e1e1e] p-4 rounded-xl border border-[#252118]">
+                {/* <p className="text-sm font-semibold mb-4">Your Mnemonic:</p> */}
                 <div className="grid grid-cols-3 gap-2 w-full">
                     {mnemonic.split(' ').map((word, index) => (
                         <div
@@ -51,7 +61,7 @@ const BackupMnemonic = () => {
 
                 <button
                     onClick={copyToClipboard}
-                    className="mt-4 px-4 py-2 bg-[#1e1e1e] from-yellow-400 to-red-200 text-white font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
+                    className="mt-2 px-4 py-1 bg-[#1e1e1e] from-yellow-400 to-red-200 text-white font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
                 >
                     <FiCopy className="text-lg text-yellow-400" />
                     Copy Mnemonic
