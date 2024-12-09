@@ -282,6 +282,11 @@
 // export default CreateWallet;
 
 
+
+
+
+
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
@@ -376,7 +381,7 @@ const CreateWallet = () => {
               setErrors({ ...errors, password: "" });
             }}
             placeholder="Set your password"
-            className="w-full h-full text-white text-sm bg-transparent border-none placeholder-neutral-400 focus:outline-none"
+            className="w-full h-full text-white text-sm bg-transparent border-none placeholder-neutral-400 focus:outline-none input:-webkit-autofill"
           />
           <button
             type="button"
