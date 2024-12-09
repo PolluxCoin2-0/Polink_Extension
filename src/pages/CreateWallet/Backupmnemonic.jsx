@@ -35,28 +35,33 @@ const BackupMnemonic = () => {
             </div>
 
             {/* Mnemonic Section */}
-            <div className="flex flex-col items-center mt-8 w-full bg-black p-4 rounded-xl border border-[#252118]">
+            <div className="flex flex-col items-center mt-8 w-full bg-[#1e1e1e] p-4 rounded-xl border border-[#252118]">
                 <p className="text-sm font-semibold mb-4">Your Mnemonic:</p>
-                <div className="bg-[#1a1a1a] text-center p-4 rounded-md w-full text-sm text-white">
-                    {mnemonic}
+                <div className="grid grid-cols-3 gap-2 w-full">
+                    {mnemonic.split(' ').map((word, index) => (
+                        <div
+                            key={index}
+                            className="bg-[#29271F] text-center p-2 rounded-md border border-[#252118] text-sm text-white"
+                        >
+                            {word}
+                        </div>
+                    ))}
                 </div>
-
 
                 <button
                     onClick={copyToClipboard}
-                    className="mt-4 px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
+                    className="mt-4 px-4 py-2 bg-[#1e1e1e] from-yellow-400 to-red-200 text-white font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
                 >
                     <FiCopy className="text-lg" />
                     Copy Mnemonic
                 </button>
-
-
             </div>
+
 
             {/* QR Code Section */}
             <button
                 onClick={() => setIsQrVisible(true)}
-                className="mt-6 px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
+                className="mt-6 px-4 py-2 bg-[#1e1e1e] text-white font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
             >
                 <BsQrCodeScan className="text-lg" />
                 Mnemonic QR Code
@@ -81,7 +86,7 @@ const BackupMnemonic = () => {
             )}
 
             {/* Already Backup Button */}
-            <div className="flex items-center justify-center mt-[80px] w-full">
+            <div className="flex items-center justify-center mt-[70px] w-full">
                 <button
                     onClick={() => navigate("/verify-mnemonic")}
                     className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"

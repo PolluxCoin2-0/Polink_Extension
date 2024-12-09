@@ -332,9 +332,15 @@ const CreateWallet = () => {
 
     setErrors(newErrors);
 
+    // if (!newErrors.walletName && !newErrors.password && !newErrors.confirmPassword) {
+    //   navigate("/ready"); // Redirect after successful wallet creation
+    // }
     if (!newErrors.walletName && !newErrors.password && !newErrors.confirmPassword) {
-      navigate("/ready"); // Redirect after successful wallet creation
+      return true; // Return true if validation passes
     }
+  
+    return false; // Return false if validation fails
+  
   };
 
   return (
@@ -440,8 +446,16 @@ const CreateWallet = () => {
 
       {/* Create Wallet Button */}
       <div className="flex items-center justify-center mt-[80px] w-full">
-        <Link to ="/backupmnemonics"
-          onClick={handleCreateWallet}
+
+      <Link
+      to="/backupmnemonics"
+      onClick={(e) => {
+        if (!handleCreateWallet()) {
+          // Prevent navigation if validation fails
+          e.preventDefault();
+        }
+      }}
+     
           className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
           style={{
             boxShadow:
