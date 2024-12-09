@@ -5,6 +5,7 @@ import { QRCodeCanvas } from "qrcode.react";
 import { Buffer } from "buffer";
 import { FiCopy } from "react-icons/fi";
 import { BsQrCodeScan } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 
 // Polyfill Buffer for Webpack 5+
