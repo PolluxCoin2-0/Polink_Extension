@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { generateMnemonic } from "bip39";
 import { QRCodeCanvas } from "qrcode.react";
 import { Buffer } from "buffer";
+import { FiCopy } from "react-icons/fi";
 
 
 // Polyfill Buffer for Webpack 5+
@@ -38,12 +39,7 @@ const BackupMnemonic = () => {
         <div className="bg-[#1a1a1a] text-center p-4 rounded-md w-full text-sm text-white">
           {mnemonic}
         </div>
-        <button
-          onClick={copyToClipboard}
-          className="mt-4 px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold rounded-lg hover:brightness-110"
-        >
-          Copy Mnemonic
-        </button>
+        
       </div>
 
       {/* QR Code Section */}
