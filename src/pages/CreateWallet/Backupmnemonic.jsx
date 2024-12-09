@@ -52,7 +52,7 @@ const BackupMnemonic = () => {
                     onClick={copyToClipboard}
                     className="mt-4 px-4 py-2 bg-[#1e1e1e] from-yellow-400 to-red-200 text-white font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
                 >
-                    <FiCopy className="text-lg" />
+                    <FiCopy className="text-lg text-yellow-400" />
                     Copy Mnemonic
                 </button>
             </div>
@@ -63,7 +63,7 @@ const BackupMnemonic = () => {
                 onClick={() => setIsQrVisible(true)}
                 className="mt-6 px-4 py-2 bg-[#1e1e1e] text-white font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
             >
-                <BsQrCodeScan className="text-lg" />
+                <BsQrCodeScan className="text-lg text-yellow-400" />
                 Mnemonic QR Code
             </button>
 
@@ -72,9 +72,15 @@ const BackupMnemonic = () => {
 
             {isQrVisible && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-md flex items-center justify-center">
-                    <div className="bg-[#1e1e1e] text-white p-6 rounded-lg relative w-[300px] text-center">
+                    <div className="bg-[#1e1e1e] text-white p-6 rounded-lg relative max-w-[90%] w-[300px] text-center">
                         <h2 className="text-lg font-semibold mb-4">Mnemonic QR Code</h2>
-                        <QRCodeCanvas value={mnemonic} size={200} />
+                        <div className="flex items-center justify-center">
+                            <QRCodeCanvas
+                                value={mnemonic}
+                                size={200}
+                                className="w-full max-w-[200px] h-auto"
+                            />
+                        </div>
                         <button
                             onClick={() => setIsQrVisible(false)}
                             className="mt-4 px-4 py-2 bg-gradient-to-r w-full from-red-400 to-yellow-200 text-black font-semibold rounded-lg hover:brightness-110"
@@ -84,6 +90,7 @@ const BackupMnemonic = () => {
                     </div>
                 </div>
             )}
+
 
             {/* Already Backup Button */}
             <div className="flex items-center justify-center mt-[70px] w-full">
