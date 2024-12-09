@@ -52,12 +52,15 @@ const BackupMnemonic = () => {
       </div>
 
       {/* QR Code Section */}
-      <button
+
+    <button
         onClick={() => setIsQrVisible(true)}
-        className="mt-6 px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold rounded-lg hover:brightness-110"
-      >
+        className="mt-6 px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
+        >
+        <BsQrCodeScan className="text-lg" />
         Mnemonic QR Code
-      </button>
+    </button>
+      
 
       {isQrVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
