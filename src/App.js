@@ -27,6 +27,7 @@ const App = () => {
         <Route path="/ready" element={<Ready />} />
         <Route path="/createwallet" element={<CreateWallet />} />
         <Route path="/backupmnemonics" element={<Backupmnemonic />} />
+        <Route path="/backupmnemonics" element={<Backupmnemonic />} />
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
