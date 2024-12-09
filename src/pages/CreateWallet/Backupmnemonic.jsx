@@ -243,7 +243,7 @@ import { BsQrCodeScan } from "react-icons/bs";
 window.Buffer = Buffer;
 
 const BackupMnemonic = () => {
-    const [mnemonic, setMnemonic] = useState(generateMnemonic());
+    const [mnemonic,] = useState(generateMnemonic());
     const [isQrVisible, setIsQrVisible] = useState(false);
     const navigate = useNavigate();
 
