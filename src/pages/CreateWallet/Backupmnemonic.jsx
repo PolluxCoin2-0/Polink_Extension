@@ -238,6 +238,7 @@ import { QRCodeCanvas } from "qrcode.react";
 import { Buffer } from "buffer";
 import { FiCopy } from "react-icons/fi";
 import { BsQrCodeScan } from "react-icons/bs";
+import { toast } from "react-toastify";
 
 // Polyfill Buffer for Webpack 5+
 window.Buffer = Buffer;
@@ -248,8 +249,10 @@ const BackupMnemonic = () => {
     const navigate = useNavigate();
 
     const copyToClipboard = () => {
+        console.log("gshghgh")
+        toast.success("Mnemonic copied to clipboard!");
         navigator.clipboard.writeText(mnemonic).then(() => {
-            alert("Mnemonic copied to clipboard!");
+            toast.success("Mnemonic copied to clipboard!");
         });
     };
 
@@ -297,7 +300,7 @@ const BackupMnemonic = () => {
 
             <button
                 onClick={() => setIsQrVisible(true)}
-                className="mt-6 px-4 py-2 bg-[#1e1e1e] text-white font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
+                className="mt-6 px-4 py-3 bg-[#1e1e1e] text-white font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
             >
                 <BsQrCodeScan className="text-lg text-yellow-400" />
                 Mnemonic QR Code
@@ -331,7 +334,7 @@ const BackupMnemonic = () => {
             
 
             {/* Already Backup Button */}
-            <div className="flex items-center justify-center mt-[60px] w-full">
+            <div className="flex items-center justify-center mt-[52px] w-full">
                 <button
                     onClick={() => navigate("/verify-mnemonic", { state: { mnemonic } })}
                     className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"

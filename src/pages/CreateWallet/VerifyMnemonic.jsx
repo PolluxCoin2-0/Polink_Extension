@@ -498,7 +498,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const VerifyMnemonic = () => {
     const navigate = useNavigate();
@@ -563,8 +562,8 @@ const VerifyMnemonic = () => {
         setIsVerified(isValid);
 
         if (isValid) {
-            toast.success("Mnemonic verification successful!");
-            setTimeout(() => navigate("/home"), 2000); // Navigate after 2 seconds
+            toast.success("successful Lets Go!");
+            setTimeout(() => navigate("/home"), 1000); // Navigate after 2 seconds
         } else {
             toast.error("Mnemonic verification failed!");
         }
@@ -633,7 +632,7 @@ const VerifyMnemonic = () => {
             {/* Complete Button */}
             <button
                 onClick={verifySelection}
-                className="mt-auto py-3 px-4 bg-gradient-to-r from-yellow-400 to-red-200 mt-[16px] text-black font-semibold rounded-xl hover:brightness-110"
+                className="py-3 px-4 bg-gradient-to-r from-yellow-400 to-red-200 mt-[12px] text-black font-semibold rounded-xl hover:brightness-110"
             >
                 Complete
             </button>
