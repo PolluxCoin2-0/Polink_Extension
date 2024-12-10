@@ -4,7 +4,9 @@
 
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
+
+// import { ToastContainer, toast } from "react-toastify";
 
 const VerifyMnemonic = () => {
     const navigate = useNavigate();
@@ -14,7 +16,11 @@ const VerifyMnemonic = () => {
     const [randomPositions, setRandomPositions] = useState([]);
     const [mnemonicOptions, setMnemonicOptions] = useState([]);
     const [selectedWords, setSelectedWords] = useState({});
-    const [isVerified, setIsVerified] = useState(null); // null indicates no attempt yet
+    const [setIsVerified] = useState(null); // null indicates no attempt yet
+
+    // const [isVerified, setIsVerified] = useState(null);
+
+
 
     useEffect(() => {
         if (!mnemonic) {
