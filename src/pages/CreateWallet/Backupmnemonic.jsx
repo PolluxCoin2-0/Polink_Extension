@@ -286,7 +286,7 @@ const BackupMnemonic = () => {
                 </div>
                 <button
                     onClick={copyToClipboard}
-                    className="mt-2 px-4 py-1 bg-[#1e1e1e] from-yellow-400 to-red-200 text-white font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
+                    className="mt-4 px-4 py-1 bg-[#1e1e1e] from-yellow-400 to-red-200 text-white font-semibold rounded-lg hover:brightness-110 flex items-center gap-2"
                 >
                     <FiCopy className="text-lg text-yellow-400" />
                     Copy Mnemonic
@@ -331,7 +331,7 @@ const BackupMnemonic = () => {
             
 
             {/* Already Backup Button */}
-            <div className="flex items-center justify-center mt-[70px] w-full">
+            <div className="flex items-center justify-center mt-[60px] w-full">
                 <button
                     onClick={() => navigate("/verify-mnemonic", { state: { mnemonic } })}
                     className="flex items-center justify-center py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
