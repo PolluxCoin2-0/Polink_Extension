@@ -419,19 +419,19 @@ const VerifyMnemonic = () => {
             </div>
 
             {/* Instruction */}
-            <p className="px-4 text-sm text-white text-center leading-relaxed mt-4">
+            <p className="px-8 text-xs text-white text-center leading-relaxed mt-">
                 Ensuring Security: Validate Your Mnemonic Order with Confidence
             </p>
 
             {/* Positions Section */}
-            <div className="grid grid-cols-3 gap-2 mt-6">
+            <div className="grid grid-cols-3 gap-4 mt-2 flex flex-col w-full bg-[#121212] px-4 py-3 rounded-xl border border-[#252118]">
                 {Array.from({ length: 12 }, (_, i) => (
                     <div
                         key={i + 1}
-                        className={`text-center py-2 rounded-md border border-gray-600 ${
+                        className={`text-center  text-xs py-2 w-20 rounded-md  ${
                             randomPositions.includes(i + 1)
                                 ? "bg-yellow-400 text-black"
-                                : "bg-gray-800 text-white"
+                                : "bg-[#29271F] text-white"
                         }`}
                     >
                         {i + 1}
@@ -440,23 +440,23 @@ const VerifyMnemonic = () => {
             </div>
 
             {/* Mnemonic Options */}
-            <div className="mt-6">
+            <div className="mt-2 bg-[#121212] px-4 py-2 rounded-xl border border-[#252118]">
                 {randomPositions.map((position, index) => (
-                    <div key={index} className="mb-4">
-                        <p className="text-sm mb-2">
+                    <div key={index} className="mb-2">
+                        <p className="text-sm text-center mb-1">
                             Choose the {position} No. word
                         </p>
-                        <div className="grid grid-cols-3 gap-2">
+                        <div className="grid grid-cols-3 gap-4">
                             {mnemonicOptions[index]?.map((word, idx) => (
                                 <button
                                     key={idx}
                                     onClick={() =>
                                         handleWordSelect(position, word)
                                     }
-                                    className={`py-2 px-4 rounded-lg ${
+                                    className={`py-[6px] px-3 rounded-lg text-xs ${
                                         selectedWords[position] === word
                                             ? "bg-yellow-400 text-black"
-                                            : "bg-gray-800 text-white"
+                                            : "bg-[#29271F] text-white"
                                     }`}
                                 >
                                     {word}
@@ -470,7 +470,7 @@ const VerifyMnemonic = () => {
             {/* Complete Button */}
             <button
                 onClick={verifySelection}
-                className="mt-auto py-3 px-4 bg-gradient-to-r from-yellow-400 to-red-400 text-black font-semibold rounded-lg hover:brightness-110"
+                className="mt-auto py-3 px-4 bg-gradient-to-r from-yellow-400 to-red-200 mt-[16px] text-black font-semibold rounded-xl hover:brightness-110"
             >
                 Complete
             </button>
