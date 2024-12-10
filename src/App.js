@@ -12,10 +12,21 @@ import Ready from "./pages/ImportWallet/Ready";
 import CreateWallet from "./pages/CreateWallet/Create";
 import Backupmnemonic from "./pages/CreateWallet/Backupmnemonic";
 import VerifyMnemonic from "./pages/CreateWallet/VerifyMnemonic";
+import { ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
     <Router>
+      <ToastContainer
+            position="top-center"
+            autoClose={1000}
+            theme="light"
+            newestOnTop={true}
+            pauseOnFocusLoss
+            toastClassName="custom-toast"
+            
+          />
       <Routes>
         {/* Initial Logo page with typewriter animation */}
         <Route path="/" element={<Logo />} />
