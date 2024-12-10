@@ -595,7 +595,7 @@ const VerifyMnemonic = () => {
                         className={`text-center text-xs py-2 w-20 rounded-md ${
                             randomPositions.includes(i + 1)
                                 ? "bg-[#FFBC44] text-black"
-                                : "bg-[#29271F] text-white"
+                                : "bg-[#29271F]  text-white"
                         }`}
                     >
                         {i + 1}

@@ -276,12 +276,12 @@ const BackupMnemonic = () => {
             </div>
 
             {/* Mnemonic Section */}
-            <div className="flex flex-col items-center mt-4 w-full bg-[#1e1e1e] p-4 rounded-xl border border-[#252118]">
+            <div className="flex flex-col items-center mt-4 w-full bg-[#1e1e1e] bg-opacity-90 p-4 rounded-xl border border-[#252118]">
                 <div className="grid grid-cols-3 gap-2 w-full">
                     {mnemonic.split(" ").map((word, index) => (
                         <div
                             key={index}
-                            className="bg-[#29271F] text-center p-2 rounded-md border border-[#252118] text-sm text-white"
+                            className="bg-[#29271F]  text-center p-2 rounded-md border border-[#252118] text-sm text-white"
                         >
                             {word}
                         </div>
@@ -297,27 +297,23 @@ const BackupMnemonic = () => {
             </div>
 
             {/* QR Code Section */}
-
             <button
                 onClick={() => setIsQrVisible(true)}
-                className="mt-6 px-4 py-3 bg-[#1e1e1e] text-white font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
+                className="mt-6 px-4 py-3 bg-[#1e1e1e] bg-opacity-90 text-white font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
             >
                 <BsQrCodeScan className="text-lg text-yellow-400" />
                 Mnemonic QR Code
             </button>
 
-
-
-
             {isQrVisible && (
-                <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-md flex items-center justify-center">
-                    <div className="bg-[#1e1e1e] text-white p-6 rounded-lg relative max-w-[90%] w-[300px] text-center">
+                <div className="fixed inset-0 bg-[#1e1e1e] bg-opacity-80 backdrop-blur-md flex items-center justify-center">
+                    <div className="bg-[#1e1e1e] bg-opacity-30 text-white p-6 rounded-lg relative max-w-[90%] w-[300px] text-center">
                         <h2 className="text-lg font-semibold mb-4">Mnemonic QR Code</h2>
                         <div className="flex items-center justify-center">
                             <QRCodeCanvas
-                                value={mnemonic}
+                                value={mnemonic.split(" ").join(" ")} // Ensures proper encoding
                                 size={200}
-                                className="w-full max-w-[200px] h-auto"
+                                className="w-full max-w-[200px]"
                             />
                         </div>
                         <button
@@ -330,8 +326,10 @@ const BackupMnemonic = () => {
                 </div>
             )}
 
-            
-            
+
+
+
+
 
             {/* Already Backup Button */}
             <div className="flex items-center justify-center mt-[52px] w-full">
