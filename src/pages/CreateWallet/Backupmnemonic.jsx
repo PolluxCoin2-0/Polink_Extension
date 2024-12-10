@@ -294,6 +294,7 @@ const BackupMnemonic = () => {
             </div>
 
             {/* QR Code Section */}
+
             <button
                 onClick={() => setIsQrVisible(true)}
                 className="mt-6 px-4 py-2 bg-[#1e1e1e] text-white font-semibold rounded-lg hover:brightness-110 flex items-center justify-center gap-2"
@@ -302,15 +303,20 @@ const BackupMnemonic = () => {
                 Mnemonic QR Code
             </button>
 
+
+
+
             {isQrVisible && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-md flex items-center justify-center">
                     <div className="bg-[#1e1e1e] text-white p-6 rounded-lg relative max-w-[90%] w-[300px] text-center">
                         <h2 className="text-lg font-semibold mb-4">Mnemonic QR Code</h2>
-                        <QRCodeCanvas
-                            value={mnemonic}
-                            size={200}
-                            className="w-full max-w-[200px] h-auto"
-                        />
+                        <div className="flex items-center justify-center">
+                            <QRCodeCanvas
+                                value={mnemonic}
+                                size={200}
+                                className="w-full max-w-[200px] h-auto"
+                            />
+                        </div>
                         <button
                             onClick={() => setIsQrVisible(false)}
                             className="mt-4 px-4 py-2 bg-gradient-to-r w-full from-red-400 to-yellow-200 text-black font-semibold rounded-lg hover:brightness-110"
@@ -320,6 +326,9 @@ const BackupMnemonic = () => {
                     </div>
                 </div>
             )}
+
+            
+            
 
             {/* Already Backup Button */}
             <div className="flex items-center justify-center mt-[70px] w-full">
