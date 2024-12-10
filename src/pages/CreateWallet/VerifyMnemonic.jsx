@@ -412,10 +412,8 @@ const VerifyMnemonic = () => {
                 >
                     <img src="/arrow-left.svg" alt="Go Back" />
                 </button>
-                <h1 className="text-lg font-semibold">Backup Mnemonic</h1>
-                <button className="absolute right-0 top-1/2 transform -translate-y-1/2 text-yellow-400 text-sm">
-                    Revisit
-                </button>
+                <h1 className="text-lg font-semibold">Verify Mnemonic</h1>
+                
             </div>
 
             {/* Instruction */}
@@ -430,7 +428,7 @@ const VerifyMnemonic = () => {
                         key={i + 1}
                         className={`text-center  text-xs py-2 w-20 rounded-md  ${
                             randomPositions.includes(i + 1)
-                                ? "bg-yellow-400 text-black"
+                                ? "bg-[#FFBC44] text-black"
                                 : "bg-[#29271F] text-white"
                         }`}
                     >
@@ -455,7 +453,7 @@ const VerifyMnemonic = () => {
                                     }
                                     className={`py-[6px] px-3 rounded-lg text-xs ${
                                         selectedWords[position] === word
-                                            ? "bg-yellow-400 text-black"
+                                            ? "bg-[#FFBC44] text-black"
                                             : "bg-[#29271F] text-white"
                                     }`}
                                 >
