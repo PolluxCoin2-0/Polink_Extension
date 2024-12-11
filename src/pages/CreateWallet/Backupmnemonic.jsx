@@ -96,9 +96,6 @@ const BackupMnemonic = () => {
 
 
 
-
-
-
             {/* Already Backup Button */}
             <div className="flex items-center justify-center mt-[52px] w-full">
                 <button

@@ -14,6 +14,7 @@ import Backupmnemonic from "./pages/CreateWallet/Backupmnemonic";
 import VerifyMnemonic from "./pages/CreateWallet/VerifyMnemonic";
 import { ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Dashboard from "./pages/Home/Dashboard";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/createwallet" element={<CreateWallet />} />
         <Route path="/backupmnemonics" element={<Backupmnemonic />} />
         <Route path="/verify-mnemonic" element={<VerifyMnemonic />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
