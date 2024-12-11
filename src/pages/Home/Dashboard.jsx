@@ -4,19 +4,21 @@ const Dashboard = () => {
     return (
         <div className="w-[350px] h-[600px] text-white">
             {/* Header Section */}
-            <div className="bg-gradient-to-r from-yellow-400 to-red-200 w-[350px] h-[8vh] text-white rounded-b-3xl flex items-center justify-between p-6">
+            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[8vh] text-white rounded-b-3xl flex items-center justify-between p-6">
                 <div className="flex items-center space-x-4">
                     <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" />
                     <div>
                         <h1 className="text-2xl text-black font-semibold">Hi, Hritik</h1>
                         <p className="text-sm text-black">Mainnet</p>
                     </div>
+
+                    
                 </div>
                 
                 
             </div>
             <div className="flex items-center px-16 space-x-4">
-                    <p className="">Total POX</p>
+                    <p className="px-16">Total POX</p>
             </div>
 
             <div className="flex">

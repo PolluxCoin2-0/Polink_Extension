@@ -76,7 +76,7 @@ const VerifyMnemonic = () => {
 
         if (isValid) {
             toast.success("successful Lets Go!");
-            setTimeout(() => navigate("/home"), 1000); // Navigate after 2 seconds
+            setTimeout(() => navigate("/dashboard"), 1000); // Navigate after 2 seconds
         } else {
             toast.error("Mnemonic verification failed!");
         }
