@@ -16,7 +16,7 @@ const VerifyMnemonic = () => {
     const [randomPositions, setRandomPositions] = useState([]);
     const [mnemonicOptions, setMnemonicOptions] = useState([]);
     const [selectedWords, setSelectedWords] = useState({});
-    const [setIsVerified] = useState(null); // null indicates no attempt yet
+    const [,setIsVerified] = useState(null); // null indicates no attempt yet
 
     // const [isVerified, setIsVerified] = useState(null);
 
@@ -96,7 +96,7 @@ const VerifyMnemonic = () => {
             </div>
 
             {/* Instruction */}
-            <p className="px-8 text-xs text-white text-center leading-relaxed mt-2">
+            <p className="px-8 text-xs text-white text-center leading-relaxed">
                 Ensuring Security: Validate Your Mnemonic Order with Confidence
             </p>
 
