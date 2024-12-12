@@ -18,13 +18,14 @@
 
 
 import React from 'react';
-import Logo from '../components/Logo/Logo';
+// import Logo from '../components/Logo/Logo';
+import Dashboard  from '../pages/Home/Dashboard';
 
 const HomePage = () => {
   return (
     <div className="home-page">
   
-      <Logo />
+      <Dashboard />
     </div>
   );
 };
