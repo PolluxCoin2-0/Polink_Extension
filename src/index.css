@@ -24,6 +24,17 @@ body {
 
 
 
+/* body {
+  margin: 0;
+  font-family: Lato;
+  width: 350px; 
+  height: 600px; 
+  overflow: hidden; 
+   
+} */
+
+
+
 /* Ensure any other content inside the app fits within this size */
 #root {
   width: 100%;
