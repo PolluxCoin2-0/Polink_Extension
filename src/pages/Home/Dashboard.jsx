@@ -47,49 +47,6 @@ const Dashboard = () => {
                 </div>
 
 
-                {/* <div className="flex flex-row justify-between items-center -mt-8 py-4 px-2">
-                <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110">
-                <span className="block text-center">
-                <img src="../images/send.svg" alt="Send Avatar" className="w-10 h-10 border border-black" />
-                </span>
-                    <span className="block text-xs mt-2 text-center">Send</span>
-                </button>
-
-                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block text-xs text-center">Receive</span>
-                </button>
-
-                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block  text-xs text-center">Stake</span>
-                </button>
-
-                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block text-xs text-center">Vote</span>
-                </button>
-            </div> */}
-
-                {/* <div className="flex flex-row justify-between items-center -mt-8 py-4 px-2">
-                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                        <img src="../images/send.svg" alt="Send Avatar" className="w-10 h-10 mx-auto" />
-                        <span className="block text-xs mt-2 text-center">Send</span>
-                    </button>
-
-                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                        <img src="../images/receive.svg" alt="Receive Avatar" className="w-10 h-10 mx-auto" />
-                        <span className="block text-xs mt-2 text-center">Receive</span>
-                    </button>
-
-                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                        <img src="../images/stake.svg" alt="Stake Avatar" className="w-10 h-10 mx-auto" />
-                        <span className="block text-xs mt-2 text-center">Stake</span>
-                    </button>
-
-                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                        <img src="../images/vote.svg" alt="Vote Avatar" className="w-10 h-10 mx-auto" />
-                        <span className="block text-xs mt-2 text-center">Vote</span>
-        3         </button>
-                </div> */}
-
                 <div className="flex flex-row justify-between items-center -mt-8 py-4 px-6">
                     <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
                         <img src="../images/send.svg" alt="Send Avatar" className="w-6 h-6 mt-[13px]" />
