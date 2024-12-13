@@ -51,13 +51,13 @@ const Dashboard = () => {
                 <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block text-xs text-center">Send</span>
                 </button>
-                <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
+                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block text-xs text-center">Receive</span>
                 </button>
-                <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
+                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block  text-xs text-center">Stake</span>
                 </button>
-                <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
+                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block text-xs text-center">Vote</span>
                 </button>
             </div>
