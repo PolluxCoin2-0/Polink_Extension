@@ -92,11 +92,11 @@ const Dashboard = () => {
                     <div className="flex justify-between gap-20 items-center">
                         <div className="text-left">
                         <p className="text-[14px] font-semibold">POX</p>
-                        <p className="text-[12px]">$0.18000</p>  
+                        <p className="text-[12px] text-gray-400">$0.18000</p>  
                         </div>
                         <div className="text-right">
                         <p className="text-[14px] font-semibold">49.054541</p>
-                        <p className="text-[12px] ">$ 20.5202</p>
+                        <p className="text-[12px] text-gray-400">$ 20.5202</p>
                         </div>
                         
                     </div>
@@ -105,8 +105,8 @@ const Dashboard = () => {
                     </div>
                     
                     <div className="flex justify-between items-center">
-                    <p className="text-sm">Available: 1100000.02210</p>
-                    <p className="text-sm">Stake: 25</p>
+                    <p className="flex justify-between text-[12px] items-center text-sm">Available: <p className="text-gray-400">1100000.02210</p></p>
+                    <p className="text-[12px]">Stake: 25</p>
                     </div>
                 </div>    
 
