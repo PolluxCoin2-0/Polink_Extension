@@ -4,11 +4,11 @@ const Dashboard = () => {
     return (
         <div className="w-[350px] h-[600px] text-white">
             {/* Header Section */}
-            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[14vh] text-white rounded-b-3xl items-center justify-between p-6">
+            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-3xl items-center justify-between p-6">
                 <div className="flex items-center space-x-4">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     <div>
-                        <h1 className="text-2xl text-black font-semibold">Hi, Hritik</h1>
+                        <h1 className="text-xl text-black font-semibold">Hi, Hritik</h1>
                         <p className="text-sm text-black">Mainnet</p>
                     </div>  
                 </div>
@@ -20,11 +20,7 @@ const Dashboard = () => {
             <p className="px-16 text-2xl text-black">80.308032</p>
             <p className="text-xs py-2 text-black">$10.45</p>
             </div>
-                
-            </div>
-                 
 
-            {/* Energy and Bandwidth Section */}
             <div className="bg-black py-4 px-6 grid grid-cols-2 gap-6 w-full rounded-xl">
                 <div className=" mb-2">
                     <div className="flex justify-between items-center">
@@ -47,6 +43,12 @@ const Dashboard = () => {
                 </div>
                 </div>
             </div>
+                
+            </div>
+                 
+
+            {/* Energy and Bandwidth Section */}
+            
 
             {/* Action Buttons Section */}
             <div className="grid grid-cols-4 gap-2 p-4 px-[24px]">
