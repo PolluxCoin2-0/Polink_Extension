@@ -4,7 +4,7 @@ const Dashboard = () => {
     return (
         <div className="w-[350px] h-[600px] text-white">
             {/* Header Section */}
-            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-3xl items-center justify-between p-6">
+            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-[40px] items-center justify-between p-6">
                 <div className="flex items-center space-x-4">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     <div>
