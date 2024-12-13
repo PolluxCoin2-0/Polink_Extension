@@ -10,66 +10,118 @@ const Dashboard = () => {
                     <div>
                         <h1 className="text-xl text-black font-semibold">Hi, Hritik</h1>
                         <p className="text-sm text-black">Mainnet</p>
-                    </div>  
-                </div>
-            <div className="items-center px-12">
-                    <p className="px-16 text-black">Total POX</p>
-            </div>
-
-            <div className="flex">
-            <p className="px-16 text-2xl text-black font-extrabold">80.308032</p>
-            <p className="text-xs py-2 text-black">$10.45</p>
-            </div>
-
-             {/* Energy and Bandwidth Section */}
-
-            <div className="bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
-                <div className=" mb-2">
-                    <div className="flex justify-between items-center">
-                    <span className="text-black font-semibold">Energy</span>
-                    <span className="text-black/60 text-xs">188/188k</span>
                     </div>
-                    <div className="h-2 bg-gray-300 rounded-full mb-4">
-                    <div className="h-full bg-green-500 rounded-lg" style={{ width: '80%' }}></div>
                 </div>
+                <div className="items-center px-12">
+                    <p className="px-16 text-black text-sm">Total POX</p>
                 </div>
-                
 
-                <div className=" mb-2">
-                    <div className="flex justify-between items-center">
-                    <span className="text-black font-semibold">Bandwidth</span>
-                    <span className="text-black/60 text-xs">188/188k</span>
+                <div className="flex">
+                    <p className="px-16 text-2xl text-black font-extrabold">80.308032</p>
+                    <p className="text-xs py-2 text-black">$10.45</p>
+                </div>
+
+                {/* Energy and Bandwidth Section */}
+
+                <div className="bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
+                    <div className=" mb-2">
+                        <div className="flex justify-between items-center">
+                            <span className="text-black font-semibold">Energy</span>
+                            <span className="text-black/60 text-xs">188/188k</span>
+                        </div>
+                        <div className="h-2 bg-gray-300 rounded-full mb-4">
+                            <div className="h-full bg-green-500 rounded-lg" style={{ width: '80%' }}></div>
+                        </div>
                     </div>
-                    <div className="h-2 bg-gray-300 rounded-full mb-4">
-                    <div className="h-full bg-blue-500 rounded-lg" style={{ width: '60%' }}></div>
-                </div>
-                </div>
-            </div>
 
 
-            <div className="flex flex-row justify-between items-center -mt-10 py-4 px-2">
-                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block text-xs text-center">Send</span>
+                    <div className=" mb-2">
+                        <div className="flex justify-between items-center">
+                            <span className="text-black font-semibold">Bandwidth</span>
+                            <span className="text-black/60 text-xs">188/188k</span>
+                        </div>
+                        <div className="h-2 bg-gray-300 rounded-full mb-4">
+                            <div className="h-full bg-blue-500 rounded-lg" style={{ width: '60%' }}></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* <div className="flex flex-row justify-between items-center -mt-8 py-4 px-2">
+                <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110">
+                <span className="block text-center">
+                <img src="../images/send.svg" alt="Send Avatar" className="w-10 h-10 border border-black" />
+                </span>
+                    <span className="block text-xs mt-2 text-center">Send</span>
                 </button>
+
                 <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block text-xs text-center">Receive</span>
                 </button>
+
                 <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block  text-xs text-center">Stake</span>
                 </button>
+
                 <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block text-xs text-center">Vote</span>
                 </button>
-            </div>
-                
-            </div>
-                 
+            </div> */}
 
-           
-            
+                {/* <div className="flex flex-row justify-between items-center -mt-8 py-4 px-2">
+                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
+                        <img src="../images/send.svg" alt="Send Avatar" className="w-10 h-10 mx-auto" />
+                        <span className="block text-xs mt-2 text-center">Send</span>
+                    </button>
+
+                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
+                        <img src="../images/receive.svg" alt="Receive Avatar" className="w-10 h-10 mx-auto" />
+                        <span className="block text-xs mt-2 text-center">Receive</span>
+                    </button>
+
+                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
+                        <img src="../images/stake.svg" alt="Stake Avatar" className="w-10 h-10 mx-auto" />
+                        <span className="block text-xs mt-2 text-center">Stake</span>
+                    </button>
+
+                    <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
+                        <img src="../images/vote.svg" alt="Vote Avatar" className="w-10 h-10 mx-auto" />
+                        <span className="block text-xs mt-2 text-center">Vote</span>
+                    </button>
+                </div> */}
+
+<div className="flex flex-row justify-between items-center -mt-8 py-4 px-2">
+    <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+        <img src="../images/send.svg" alt="Send Avatar" className="w-8 h-8 mt-[13px]" />
+        <span className="block text-[10px] text-white mt-[14px]">Send</span>
+    </button>
+
+    <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+        <img src="../images/receive.svg" alt="Receive Avatar" className="w-8 h-8 mt-4" />
+        <span className="block text-[10px] text-white mt-4">Receive</span>
+    </button>
+
+    <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+        <img src="../images/stake.svg" alt="Stake Avatar" className="w-8 h-8 mt-3" />
+        <span className="block text-[10px] text-white mt-4">Stake</span>
+    </button>
+    
+    <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+        <img src="../images/vote.svg" alt="Vote Avatar" className="w-8 h-8 mt-4" />
+        <span className="block text-[10px] text-white  mt-3">Vote</span>
+    </button>
+</div>
+
+
+
+            </div>
+
+
+
+
 
             {/* Action Buttons Section */}
-          
+
 
             {/* Assets Section */}
             <div className="p-6 mt-8 space-y-2">
