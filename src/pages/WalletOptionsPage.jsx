@@ -59,58 +59,7 @@ const WalletOptionsPage = () => {
        <ImageSlider />
 
       
-      {/* <div className="slider flex flex-col items-center pt-8">
-        <div className="slider-images flex overflow-hidden w-64 h-40 mb-4">
-          <img
-            src="/slider1.svg"
-            alt="Slider 1"
-            className="w-full h-full object-cover animate-slide"
-          />
-          <img
-            src="/slider2.svg"
-            alt="Slider 2"
-            className="w-full h-full object-cover animate-slide"
-          />
-          <img
-            src="/slider3.svg"
-            alt="Slider 3"
-            className="w-full h-full object-cover animate-slide"
-          />
-        </div>
-       
-        <div className="slider-dots flex gap-2 pt-6">
-          <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
-          <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
-          <div className="dot w-3 h-3 bg-yellow-500 rounded-full"></div>
-        </div>
-      </div> */}
-      {/* Image Slider */}
-      {/* <div className="slider flex flex-col items-center pt-8">
-        <div className="slider-images relative w-64 h-40 overflow-hidden rounded-lg">
-          {[1, 2, 3].map((index) => (
-            <img
-              key={index}
-              src={`/slider${index}.svg`}
-              alt={`Slider ${index}`}
-              className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${
-                index === 1 ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          ))}
-        </div>
-        <div className="slider-dots flex gap-2 pt-6">
-          {[0, 1, 2].map((_, index) => (
-            <div
-              key={index}
-              className={`dot w-3 h-3 rounded-full ${
-                index === 0 ? "bg-yellow-500" : "bg-gray-400"
-              }`}
-            ></div>
-          ))}
-        </div>
-      </div>
-
-       */}
+  
 
       {/* Text */}
       <div className="text-container text-center  pt-8">
@@ -158,23 +107,4 @@ const WalletOptionsPage = () => {
 export default WalletOptionsPage;
 
 
-/* Tailwind Styles */
-/* Add this to your global CSS or component-specific CSS */
-/*
-.animate-slide {
-  animation: slide 5s infinite;
-}
-
-@keyframes slide {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  33% {
-    transform: translateX(-100%);
-  }
-  66% {
-    transform: translateX(-200%);
-  }
-}
-*/
 

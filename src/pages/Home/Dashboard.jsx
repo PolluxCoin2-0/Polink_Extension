@@ -6,7 +6,7 @@ const Dashboard = () => {
             {/* Header Section */}
             <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[14vh] text-white rounded-b-3xl items-center justify-between p-6">
                 <div className="flex items-center space-x-4">
-                    <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" />
+                    {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     <div>
                         <h1 className="text-2xl text-black font-semibold">Hi, Hritik</h1>
                         <p className="text-sm text-black">Mainnet</p>
@@ -22,25 +22,29 @@ const Dashboard = () => {
             </div>
                 
             </div>
-            
-                    
-            
+                 
 
             {/* Energy and Bandwidth Section */}
-            <div className="bg-black py-4 px-6 rounded-xl mx-6">
-                <div className="flex justify-between items-center mb-2">
+            <div className="bg-black py-4 px-6 grid grid-cols-2 gap-6 w-full rounded-xl">
+                <div className=" mb-2">
+                    <div className="flex justify-between items-center">
                     <span>Energy</span>
-                    <span>188/188k</span>
+                    <span className="text-white/80 text-xs">188/188k</span>
+                    </div>
+                    <div className="h-2 bg-gray-300 rounded-full mb-4">
+                    <div className="h-full bg-green-500 rounded-lg" style={{ width: '100%' }}></div>
                 </div>
-                <div className="h-2 bg-gray-300 rounded-full mb-4">
-                    <div className="h-full bg-green-500" style={{ width: '100%' }}></div>
                 </div>
-                <div className="flex justify-between items-center mb-2">
+                
+
+                <div className=" mb-2">
+                    <div className="flex justify-between items-center">
                     <span>Bandwidth</span>
-                    <span>223/678</span>
+                    <span className="text-white/80 text-xs">188/188k</span>
+                    </div>
+                    <div className="h-2 bg-gray-300 rounded-full mb-4">
+                    <div className="h-full bg-blue-500 rounded-lg" style={{ width: '100%' }}></div>
                 </div>
-                <div className="h-2 bg-gray-300 rounded-full">
-                    <div className="h-full bg-blue-500" style={{ width: '33%' }}></div>
                 </div>
             </div>
 
