@@ -37,7 +37,7 @@ const Dashboard = () => {
 
                 <div className=" mb-2">
                     <div className="flex justify-between items-center">
-                    <span>Bandwidth</span>
+                    <span className="text-black">Bandwidth</span>
                     <span className="text-white/80 text-xs">188/188k</span>
                     </div>
                     <div className="h-2 bg-gray-300 rounded-full mb-4">
