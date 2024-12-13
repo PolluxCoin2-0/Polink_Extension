@@ -2,74 +2,81 @@ import React from "react";
 
 const Dashboard = () => {
     return (
-        <div className="w-[350px] h-[600px] border text-white">
+        <div className="w-[350px] h-[600px] text-white">
             {/* Header Section */}
-            <div className="border bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-[40px] items-center justify-between p-6">
-                <div className="border flex items-center space-x-4">
+            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-[40px] items-center justify-between p-6">
+                <div className="flex items-center space-x-4">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     <div>
                         <h1 className="text-xl text-black font-semibold">Hi, Hritik</h1>
                         <p className="text-sm text-black">Mainnet</p>
-                    </div>  
-                </div>
-            <div className="items-center px-12">
-                    <p className="px-16 text-black">Total POX</p>
-            </div>
-
-            <div className="flex">
-            <p className="px-16 text-2xl text-black">80.308032</p>
-            <p className="text-xs py-2 text-black">$10.45</p>
-            </div>
-
-             {/* Energy and Bandwidth Section */}
-
-            <div className="border bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
-                <div className=" mb-2">
-                    <div className="flex justify-between items-center">
-                    <span className="text-black">Energy</span>
-                    <span className="text-black/60 text-xs">188/188k</span>
                     </div>
-                    <div className="h-2 bg-gray-300 rounded-full mb-4">
-                    <div className="h-full bg-green-500 rounded-lg" style={{ width: '100%' }}></div>
                 </div>
+                <div className="items-center px-12">
+                    <p className="px-16 text-black text-sm">Total POX</p>
                 </div>
-                
 
-                <div className=" mb-2">
-                    <div className="flex justify-between items-center">
-                    <span className="text-black">Bandwidth</span>
-                    <span className="text-black/60 text-xs">188/188k</span>
+                <div className="flex">
+                    <p className="px-16 text-2xl text-black font-extrabold">80.308032</p>
+                    <p className="text-xs py-2 text-black">$10.45</p>
+                </div>
+
+                {/* Energy and Bandwidth Section */}
+
+                <div className="bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
+                    <div className=" mb-2">
+                        <div className="flex justify-between items-center">
+                            <span className="text-black font-semibold">Energy</span>
+                            <span className="text-black/60 text-xs">188/188k</span>
+                        </div>
+                        <div className="h-2 bg-gray-300 rounded-full mb-4">
+                            <div className="h-full bg-green-500 rounded-lg" style={{ width: '80%' }}></div>
+                        </div>
                     </div>
-                    <div className="h-2 bg-gray-300 rounded-full mb-4">
-                    <div className="h-full bg-blue-500 rounded-lg" style={{ width: '100%' }}></div>
+
+
+                    <div className=" mb-2">
+                        <div className="flex justify-between items-center">
+                            <span className="text-black font-semibold">Bandwidth</span>
+                            <span className="text-black/60 text-xs">188/188k</span>
+                        </div>
+                        <div className="h-2 bg-gray-300 rounded-full mb-4">
+                            <div className="h-full bg-blue-500 rounded-lg" style={{ width: '60%' }}></div>
+                        </div>
+                    </div>
                 </div>
+
+
+                <div className="flex flex-row justify-between items-center -mt-8 py-4 px-6">
+                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                        <img src="../images/send.svg" alt="Send Avatar" className="w-6 h-6 mt-[13px]" />
+                        <span className="block text-[13px] text-white font-semibold mt-[14px]">Send</span>
+                    </button>
+
+                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                        <img src="../images/receive.svg" alt="Receive Avatar" className="w-6 h-6 mt-4" />
+                        <span className="block text-[13px] text-white font-semibold mt-[15px]">Receive</span>
+                    </button>
+
+                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                        <img src="../images/stake.svg" alt="Stake Avatar" className="w-6 h-6 mt-3" />
+                        <span className="block text-[13px] text-white font-semibold mt-4">Stake</span>
+                    </button>
+
+                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                        <img src="../images/vote.svg" alt="Vote Avatar" className="w-6 h-6 mt-4" />
+                        <span className="block text-[13px] text-white font-semibold mt-3">Vote</span>
+                    </button>
                 </div>
+
             </div>
 
 
-            <div className="flex flex-row justify-between items-center -mt-10 py-4 px-2">
-                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block text-xs text-center">Send</span>
-                </button>
-                <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block text-xs text-center">Receive</span>
-                </button>
-                <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block  text-xs text-center">Stake</span>
-                </button>
-                <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
-                    <span className="block text-xs text-center">Vote</span>
-                </button>
-            </div>
-                
-            </div>
-                 
 
-           
-            
+
 
             {/* Action Buttons Section */}
-          
+
 
             {/* Assets Section */}
             <div className="p-6 mt-8 space-y-2">
