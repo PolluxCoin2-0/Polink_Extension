@@ -21,10 +21,12 @@ const Dashboard = () => {
             <p className="text-xs py-2 text-black">$10.45</p>
             </div>
 
-            <div className="bg-black py-4 px-6 grid grid-cols-2 gap-6 w-full rounded-xl">
+             {/* Energy and Bandwidth Section */}
+
+            <div className="bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
                 <div className=" mb-2">
                     <div className="flex justify-between items-center">
-                    <span>Energy</span>
+                    <span className="text-black">Energy</span>
                     <span className="text-white/80 text-xs">188/188k</span>
                     </div>
                     <div className="h-2 bg-gray-300 rounded-full mb-4">
@@ -47,7 +49,7 @@ const Dashboard = () => {
             </div>
                  
 
-            {/* Energy and Bandwidth Section */}
+           
             
 
             {/* Action Buttons Section */}
