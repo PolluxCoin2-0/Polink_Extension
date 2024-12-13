@@ -80,18 +80,41 @@ const Dashboard = () => {
 
             {/* Assets Section */}
             <div className="p-6 mt-8 space-y-2">
-                <div className="flex justify-between items-center text-black bg-white rounded-xl px-6 py-2">
-                    <div>
-                        <h2 className="text-lg">POX</h2>
-                        <p className="text-sm">Available: 1100000.02210</p>
-                    </div>
-                    <div className="text-right">
-                        <p className="text-lg font-semibold">49.054541</p>
-                        <p className="text-sm">$0.18000</p>
-                    </div>
-                </div>
 
-                <div className="flex justify-between items-center text-black bg-white rounded-xl px-6 py-2">
+            {/* POX */}
+
+                <div className="text-black bg-white rounded-xl px-6 py-2">
+                    <div className="flex justify-between items-center">
+                    <div>
+                    <img src="../images/poxtoken.svg" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
+                    </div>
+                    
+                    <div className="flex justify-between gap-20 items-center">
+                        <div className="text-left">
+                        <p className="text-[14px] font-semibold">POX</p>
+                        <p className="text-[12px]">$0.18000</p>  
+                        </div>
+                        <div className="text-right">
+                        <p className="text-[14px] font-semibold">49.054541</p>
+                        <p className="text-[12px] ">$ 20.5202</p>
+                        </div>
+                        
+                    </div>
+                    
+
+                    </div>
+                    
+                    <div className="flex justify-between items-center">
+                    <p className="text-sm">Available: 1100000.02210</p>
+                    <p className="text-sm">Stake: 25</p>
+                    </div>
+                </div>    
+
+            {/* USDX */}
+
+
+
+                {/* <div className="flex justify-between items-center text-black bg-white rounded-xl px-6 py-2">
                     <div>
                         <h2 className="text-lg">USDX</h2>
                     </div>
@@ -109,7 +132,7 @@ const Dashboard = () => {
                         <p className="text-lg font-semibold">4940.454</p>
                         <p className="text-sm">Price: TBD</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
