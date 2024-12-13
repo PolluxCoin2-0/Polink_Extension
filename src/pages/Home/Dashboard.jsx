@@ -93,22 +93,22 @@ const Dashboard = () => {
 <div className="flex flex-row justify-between items-center -mt-8 py-4 px-2">
     <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
         <img src="../images/send.svg" alt="Send Avatar" className="w-8 h-8 mt-[13px]" />
-        <span className="block text-[10px] text-white mt-[14px]">Send</span>
+        <span className="block text-[14px] text-white font-semibold mt-[14px]">Send</span>
     </button>
 
     <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
         <img src="../images/receive.svg" alt="Receive Avatar" className="w-8 h-8 mt-4" />
-        <span className="block text-[10px] text-white mt-4">Receive</span>
+        <span className="block text-[14px] text-white font-semibold mt-[17px]">Receive</span>
     </button>
 
     <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
         <img src="../images/stake.svg" alt="Stake Avatar" className="w-8 h-8 mt-3" />
-        <span className="block text-[10px] text-white mt-4">Stake</span>
+        <span className="block text-[14px] text-white font-semibold mt-4">Stake</span>
     </button>
     
     <button className="bg-white h-14 w-14 rounded-full text-white hover:brightness-110 flex flex-col items-center">
         <img src="../images/vote.svg" alt="Vote Avatar" className="w-8 h-8 mt-4" />
-        <span className="block text-[10px] text-white  mt-3">Vote</span>
+        <span className="block text-[14px] text-white font-semibold mt-3">Vote</span>
     </button>
 </div>
 
