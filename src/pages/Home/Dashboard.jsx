@@ -2,10 +2,10 @@ import React from "react";
 
 const Dashboard = () => {
     return (
-        <div className="w-[350px] h-[600px] text-white">
+        <div className="w-[350px] h-[600px] border text-white">
             {/* Header Section */}
-            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-[40px] items-center justify-between p-6">
-                <div className="flex items-center space-x-4">
+            <div className="border bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-[40px] items-center justify-between p-6">
+                <div className="border flex items-center space-x-4">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     <div>
                         <h1 className="text-xl text-black font-semibold">Hi, Hritik</h1>
@@ -23,7 +23,7 @@ const Dashboard = () => {
 
              {/* Energy and Bandwidth Section */}
 
-            <div className="bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
+            <div className="border bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
                 <div className=" mb-2">
                     <div className="flex justify-between items-center">
                     <span className="text-black">Energy</span>
@@ -45,16 +45,10 @@ const Dashboard = () => {
                 </div>
                 </div>
             </div>
-                
-            </div>
-                 
 
-           
-            
 
-            {/* Action Buttons Section */}
-            <div className="grid grid-cols-4 gap-2 p-4 px-[24px]">
-                <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
+            <div className="flex flex-row justify-between items-center -mt-10 py-4 px-2">
+                <button className="bg-white h-14 w-14 rounded-full text-black hover:brightness-110">
                     <span className="block text-xs text-center">Send</span>
                 </button>
                 <button className="bg-gradient-to-r from-yellow-400 to-red-200 h-14 w-14 rounded-full text-black hover:brightness-110">
@@ -67,9 +61,18 @@ const Dashboard = () => {
                     <span className="block text-xs text-center">Vote</span>
                 </button>
             </div>
+                
+            </div>
+                 
+
+           
+            
+
+            {/* Action Buttons Section */}
+          
 
             {/* Assets Section */}
-            <div className="p-6 space-y-2">
+            <div className="p-6 mt-8 space-y-2">
                 <div className="flex justify-between items-center text-black bg-white rounded-xl px-6 py-2">
                     <div>
                         <h2 className="text-lg">POX</h2>
