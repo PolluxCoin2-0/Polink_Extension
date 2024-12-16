@@ -925,6 +925,8 @@ const CreateWallet = () => {
     if (!newErrors.walletName && !newErrors.password && !newErrors.confirmPassword) {
       const hashedPassword = CryptoJS.SHA256(password).toString();
       localStorage.setItem(walletName, hashedPassword);
+
+      localStorage.setItem("walletCreated", "true");
     
       // Save wallet name for Dashboard
       localStorage.setItem("walletName", walletName);
@@ -933,7 +935,6 @@ const CreateWallet = () => {
       console.log("Hashed Password saved:", hashedPassword);
       return true;
     }
-    
 
     return false;
   };
