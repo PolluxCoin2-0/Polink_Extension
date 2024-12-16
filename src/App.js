@@ -51,6 +51,11 @@
 
 // export default App;
 
+
+
+
+
+
 import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import WalletOptionsPage from "./pages/WalletOptionsPage";
@@ -114,10 +119,14 @@ const App = () => {
           element={isWalletCreated ? <Navigate to="/dashboard" /> : <ImportWallet />}
         />
         <Route path="/ready" element={<Ready />} />
+
+        
+
         <Route
           path="/createwallet"
           element={isWalletCreated ? <Navigate to="/dashboard" /> : <CreateWallet />}
         />
+
         <Route
           path="/backupmnemonics"
           element={isWalletCreated ? <Navigate to="/dashboard" /> : <Backupmnemonic />}
