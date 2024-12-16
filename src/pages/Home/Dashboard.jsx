@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Dashboard = () => {
+
+    const [walletName, setWalletName] = useState("");
+
+    useEffect(() => {
+        // Retrieve wallet name from localStorage
+        const storedWalletName = localStorage.getItem("walletName");
+        if (storedWalletName) {
+          setWalletName(storedWalletName);
+        }
+      }, []);
+    
+
+
+
     return (
-        <div className="w-[350px] h-[600px] text-white">
+        <div className="w-[350px] h-[600px] mx-auto text-white">
             {/* Header Section */}
-            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-[40px] items-center justify-between p-6">
+            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[224px] text-white rounded-b-[40px] items-center justify-between p-6">
                 <div className="flex items-center space-x-4">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     <div>
-                        <h1 className="text-xl text-black font-semibold">Hi, Hritik</h1>
+                        <h1 className="text-xl text-black font-semibold">Hi, {walletName}</h1>
                         <p className="text-sm text-black">Mainnet</p>
                     </div>
                 </div>
@@ -77,22 +91,22 @@ const Dashboard = () => {
 
             {/* Action Buttons Section */}
             <div className="p-6 mt-4 space-y-2"></div>
-            <div className="flex justify-center gap-12">
-                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+            <div className="flex justify-center gap-4">
+                    <button className="bg-[#FFE086] h-8 w-24 rounded-2xl text-white hover:brightness-110 flex flex-col items-center">
                         
-                        <span className="block text-[13px] text-black font-semibold mt-[14px]">Send</span>
+                        <span className="block text-[13px] text-black font-semibold p-2">Assets</span>
                     </button>
 
-                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                    <button className="bg-white h-8 w-24 rounded-2xl text-white hover:brightness-110 flex flex-col items-center">
                         
-                        <span className="block text-[13px] text-black font-semibold mt-[15px]">Receive</span>
+                        <span className="block text-[13px] text-black font-semibold p-2">Collectibles</span>
                     </button>
             </div>
             
 
 
             {/* Assets Section */}
-            <div className="p-6 mt-8 space-y-2">
+            <div className="p-4 space-y-2">
 
             {/* POX */}
 
@@ -145,28 +159,6 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-
-
-
-                {/* <div className="flex justify-between items-center text-black bg-white rounded-xl px-6 py-2">
-                    <div>
-                        <h2 className="text-lg">USDX</h2>
-                    </div>
-                    <div className="text-right">
-                        <p className="text-lg font-semibold">49.054541</p>
-                        <p className="text-sm">$1.00</p>
-                    </div>
-                </div>
-
-                <div className="flex justify-between items-center text-black bg-white rounded-xl px-6 py-2">
-                    <div>
-                        <h2 className="text-lg">UVI</h2>
-                    </div>
-                    <div className="text-right">
-                        <p className="text-lg font-semibold">4940.454</p>
-                        <p className="text-sm">Price: TBD</p>
-                    </div>
-                </div> */}
             </div>
         </div>
     );

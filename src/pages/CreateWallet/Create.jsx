@@ -910,17 +910,30 @@ const CreateWallet = () => {
 
     setErrors(newErrors);
 
+    // if (!newErrors.walletName && !newErrors.password && !newErrors.confirmPassword) {
+    //   const hashedPassword = CryptoJS.SHA256(password).toString();
+    //   localStorage.setItem(walletName, hashedPassword);
+
+    //   // After wallet creation is complete
+    //   localStorage.setItem("walletCreated", "true");
+
+    //   console.log("Wallet created successfully with name:", walletName);
+    //   console.log("Hashed Password saved:", hashedPassword);
+    //   return true;
+    // }
+
     if (!newErrors.walletName && !newErrors.password && !newErrors.confirmPassword) {
       const hashedPassword = CryptoJS.SHA256(password).toString();
       localStorage.setItem(walletName, hashedPassword);
-
-      // After wallet creation is complete
-      localStorage.setItem("walletCreated", "true");
-
+    
+      // Save wallet name for Dashboard
+      localStorage.setItem("walletName", walletName);
+    
       console.log("Wallet created successfully with name:", walletName);
       console.log("Hashed Password saved:", hashedPassword);
       return true;
     }
+    
 
     return false;
   };
@@ -940,7 +953,7 @@ const CreateWallet = () => {
 
       {/* Input Section: Wallet Name */}
       <div className="flex flex-col items-center mt-4 w-full bg-black">
-        <div className="relative w-full h-16 p-4 border border-[1px] border-[#252118] rounded-xl">
+        <div className="relative w-full h-16 p-4 border border-[#252118] rounded-xl">
           <input
             type="text"
             value={walletName}
@@ -959,7 +972,7 @@ const CreateWallet = () => {
 
       {/* Input Section: Password */}
       <div className="flex flex-col items-center mt-8 w-full bg-black">
-        <div className="relative w-full h-16 p-4 border border-[1px] border-[#252118] rounded-xl">
+        <div className="relative w-full h-16 p-4 border border-[#252118] rounded-xl">
           <input
             type={isPasswordVisible ? "text" : "password"}
             value={password}
@@ -1002,7 +1015,7 @@ const CreateWallet = () => {
 
       {/* Confirm Password */}
       <div className="flex flex-col items-center mt-4 w-full bg-black">
-        <div className="relative w-full h-16 p-4 border border-[1px] border-[#252118] rounded-xl">
+        <div className="relative w-full h-16 p-4 border border-[#252118] rounded-xl">
           <input
             type={isConfirmPasswordVisible ? "text" : "password"}
             value={confirmPassword}
