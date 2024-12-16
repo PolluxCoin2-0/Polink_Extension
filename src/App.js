@@ -70,6 +70,9 @@ import Dashboard from "./pages/Home/Dashboard";
 const App = () => {
   const [isWalletCreated, setIsWalletCreated] = useState(false);
 
+
+  
+
   useEffect(() => {
     // Check localStorage for wallet creation status
     const walletCreated = localStorage.getItem("walletCreated");

@@ -76,6 +76,19 @@ const Dashboard = () => {
 
 
             {/* Action Buttons Section */}
+            <div className="p-6 mt-4 space-y-2"></div>
+            <div className="flex justify-center gap-12">
+                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                        
+                        <span className="block text-[13px] text-black font-semibold mt-[14px]">Send</span>
+                    </button>
+
+                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                        
+                        <span className="block text-[13px] text-black font-semibold mt-[15px]">Receive</span>
+                    </button>
+            </div>
+            
 
 
             {/* Assets Section */}
@@ -92,16 +105,13 @@ const Dashboard = () => {
                     <div className="flex justify-between gap-20 items-center">
                         <div className="text-left">
                         <p className="text-[14px] font-semibold">POX</p>
-                        <p className="text-[12px] text-gray-400">$0.18000</p>  
+                        <p className="text-[12px] text-gray-400">$0.180210</p>  
                         </div>
                         <div className="text-right">
                         <p className="text-[14px] font-semibold">49.054541</p>
                         <p className="text-[12px] text-gray-400">$ 20.5202</p>
-                        </div>
-                        
+                        </div>         
                     </div>
-                    
-
                     </div>
                     
                     <div className="flex justify-between items-center">
@@ -111,6 +121,30 @@ const Dashboard = () => {
                 </div>    
 
             {/* USDX */}
+            <div className="text-black bg-white rounded-xl px-6 py-2">
+                    <div className="flex justify-between items-center">
+                    <div>
+                    <img src="../images/uvitoken.png" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
+                    </div>
+                    
+                    <div className="flex justify-between gap-20 items-center">
+                        <div className="text-left">
+                        <p className="text-[14px] font-semibold">USDX</p>
+                        <p className="text-[12px] text-gray-400">$2.180</p>  
+                        </div>
+                        <div className="text-right">
+                        <p className="text-[14px] font-semibold">49.054541</p>
+                        <p className="text-[12px] text-gray-400">$ $1.00</p>
+                        </div>         
+                    </div>
+                    </div>
+                    
+                    <div className="flex justify-between items-center">
+                    <p className="flex justify-between text-[12px] items-center text-sm">Available: <p className="text-gray-400">1100000.02210</p></p>
+                    <p className="text-[12px]">Stake: 25</p>
+                    </div>
+                </div>
+
 
 
 
