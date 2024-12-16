@@ -31,8 +31,8 @@ const Dashboard = () => {
                 </div>
 
                 <div className="flex">
-                    <p className="px-16 text-2xl text-black font-extrabold">80.308032</p>
-                    <p className="text-xs py-2 text-black">$10.45</p>
+                    <p className="px-16 text-2xl text-black font-extrabold">800000.32</p>
+                    <p className="text-xs py-2 text-black">$10548.45</p>
                 </div>
 
                 {/* Energy and Bandwidth Section */}
@@ -110,47 +110,47 @@ const Dashboard = () => {
 
             {/* POX */}
 
-                <div className="text-black bg-white rounded-xl px-6 py-2">
-                    <div className="flex justify-between items-center">
-                    <div>
-                    <img src="../images/poxtoken.svg" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
-                    </div>
-                    
-                    <div className="flex justify-between gap-20 items-center">
-                        <div className="text-left">
-                        <p className="text-[14px] font-semibold">POX</p>
-                        <p className="text-[12px] text-gray-400">$0.180210</p>  
-                        </div>
-                        <div className="text-right">
-                        <p className="text-[14px] font-semibold">49.054541</p>
-                        <p className="text-[12px] text-gray-400">$ 20.5202</p>
-                        </div>         
-                    </div>
-                    </div>
-                    
-                    <div className="flex justify-between items-center">
-                    <p className="flex justify-between text-[12px] items-center text-sm">Available: <p className="text-gray-400">1100000.02210</p></p>
-                    <p className="text-[12px]">Stake: 25</p>
-                    </div>
-                </div>    
+            <div className="text-black bg-white rounded-xl px-6 py-2">
+
+<div className="flex justify-between items-center">
+    <div className="flex items-center space-x-2">
+    <div>
+    <img src="../images/poxtoken.svg" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
+    </div>
+    <div className="text-left">
+        <p className="text-[14px] font-semibold">POX</p>
+        <p className="text-[12px] text-gray-400">$2.1834534540</p>  
+        </div>
+    </div>
+    <div className="text-right">
+        <p className="text-[14px] font-semibold">49.054541</p>
+        <p className="text-[12px] text-gray-400">$ 1.00</p>
+        </div>
+    </div>
+    
+    <div className="flex justify-between items-center">
+    <p className="flex justify-between text-[12px] items-center text-sm">Available: <p className="text-gray-400">1100000.02210</p></p>
+    <p className="text-[12px]">Stake: 25</p>
+    </div>
+</div>   
 
             {/* USDX */}
             <div className="text-black bg-white rounded-xl px-6 py-2">
-                    <div className="flex justify-between items-center">
+
+                <div className="flex justify-between items-center">
+                    <div className="flex items-center space-x-2">
                     <div>
                     <img src="../images/uvitoken.png" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
                     </div>
-                    
-                    <div className="flex justify-between gap-20 items-center">
-                        <div className="text-left">
+                    <div className="text-left">
                         <p className="text-[14px] font-semibold">USDX</p>
-                        <p className="text-[12px] text-gray-400">$2.180</p>  
+                        <p className="text-[12px] text-gray-400">$2.1834534540</p>  
                         </div>
-                        <div className="text-right">
-                        <p className="text-[14px] font-semibold">49.054541</p>
-                        <p className="text-[12px] text-gray-400">$ $1.00</p>
-                        </div>         
                     </div>
+                    <div className="text-right">
+                        <p className="text-[14px] font-semibold">49.054541</p>
+                        <p className="text-[12px] text-gray-400">$ 1.00</p>
+                        </div>
                     </div>
                     
                     <div className="flex justify-between items-center">
