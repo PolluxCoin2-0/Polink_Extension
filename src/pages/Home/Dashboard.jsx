@@ -2,9 +2,9 @@ import React from "react";
 
 const Dashboard = () => {
     return (
-        <div className="w-[350px] h-[600px] text-white">
+        <div className="w-[350px] h-[600px] mx-auto text-white">
             {/* Header Section */}
-            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[24vh] text-white rounded-b-[40px] items-center justify-between p-6">
+            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[224px] text-white rounded-b-[40px] items-center justify-between p-6">
                 <div className="flex items-center space-x-4">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     <div>
@@ -77,22 +77,22 @@ const Dashboard = () => {
 
             {/* Action Buttons Section */}
             <div className="p-6 mt-4 space-y-2"></div>
-            <div className="flex justify-center gap-12">
-                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+            <div className="flex justify-center gap-4">
+                    <button className="bg-[#FFE086] h-8 w-24 rounded-2xl text-white hover:brightness-110 flex flex-col items-center">
                         
-                        <span className="block text-[13px] text-black font-semibold mt-[14px]">Send</span>
+                        <span className="block text-[13px] text-black font-semibold p-2">Assets</span>
                     </button>
 
-                    <button className="bg-white h-12 w-12 rounded-full text-white hover:brightness-110 flex flex-col items-center">
+                    <button className="bg-white h-8 w-24 rounded-2xl text-white hover:brightness-110 flex flex-col items-center">
                         
-                        <span className="block text-[13px] text-black font-semibold mt-[15px]">Receive</span>
+                        <span className="block text-[13px] text-black font-semibold p-2">Collectibles</span>
                     </button>
             </div>
             
 
 
             {/* Assets Section */}
-            <div className="p-6 mt-8 space-y-2">
+            <div className="p-4 space-y-2">
 
             {/* POX */}
 
