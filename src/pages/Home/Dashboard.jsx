@@ -20,12 +20,21 @@ const Dashboard = () => {
         <div className="w-[350px] h-[600px] mx-auto text-white">
             {/* Header Section */}
             <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[224px] text-white rounded-b-[40px] items-center justify-between p-6">
-                <div className="flex items-center space-x-4">
+                <div className="flex justify-between">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
+                    
                     <div>
                         <h1 className="text-xl text-black font-semibold">Hi, {walletName}</h1>
                         <p className="text-sm text-black">Mainnet</p>
                     </div>
+
+                    <div>
+                    <button className="bg-transparent ">
+                        <img src="../images/walleticon.svg" alt="Send Avatar" className="w-6 h-6 mt-2" />
+                        
+                    </button>
+                    </div>
+
                 </div>
                 <div className="items-center px-12">
                     <p className="px-16 text-black text-sm">Total POX</p>
