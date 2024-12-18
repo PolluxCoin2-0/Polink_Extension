@@ -910,21 +910,12 @@ const CreateWallet = () => {
 
     setErrors(newErrors);
 
-    // if (!newErrors.walletName && !newErrors.password && !newErrors.confirmPassword) {
-    //   const hashedPassword = CryptoJS.SHA256(password).toString();
-    //   localStorage.setItem(walletName, hashedPassword);
-
-    //   // After wallet creation is complete
-    //   localStorage.setItem("walletCreated", "true");
-
-    //   console.log("Wallet created successfully with name:", walletName);
-    //   console.log("Hashed Password saved:", hashedPassword);
-    //   return true;
-    // }
 
     if (!newErrors.walletName && !newErrors.password && !newErrors.confirmPassword) {
       const hashedPassword = CryptoJS.SHA256(password).toString();
       localStorage.setItem(walletName, hashedPassword);
+
+      localStorage.setItem("walletCreated", "true");
     
       // Save wallet name for Dashboard
       localStorage.setItem("walletName", walletName);
@@ -933,7 +924,6 @@ const CreateWallet = () => {
       console.log("Hashed Password saved:", hashedPassword);
       return true;
     }
-    
 
     return false;
   };
@@ -1046,10 +1036,11 @@ const CreateWallet = () => {
           onClick={(e) => {
             if (!handleCreateWallet()) {
               e.preventDefault();
-            } else {
-              // After mnemonic backup and verification
-              localStorage.setItem("walletVerified", "true");
-            }
+            } 
+            // else {
+             
+            //   localStorage.setItem("walletVerified", "true");
+            // }
           }}
           className="flex items-center justify-center mt-12 py-3 rounded-xl w-full bg-gradient-to-r from-yellow-400 to-red-200 text-black font-semibold hover:brightness-110"
           style={{

@@ -377,6 +377,8 @@
 
 // export default BackupMnemonic;
 
+
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { generateMnemonic } from "bip39";
@@ -423,7 +425,7 @@ const BackupMnemonic = () => {
     };
 
     const copyToClipboard = () => {
-        toast.success("Mnemonic copied to clipboard!");
+        // toast.success("Mnemonic copied to clipboard!");
         navigator.clipboard.writeText(mnemonic).then(() => {
             toast.success("Mnemonic copied to clipboard!");
         });

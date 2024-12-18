@@ -51,7 +51,7 @@ const ImportWallet = () => {
 
 
       <div className="flex flex-col items-center mt-4 w-full bg-black">
-        <div className="relative w-full h-32 p-4 border border-[1px] border-[#252118] rounded-xl">
+        <div className="relative w-full h-32 p-4 border-[#252118] rounded-xl">
           <h3 className="text-sm font-medium text-neutral-400">Import Wallet</h3>
           <input
             type={isMnemonicVisible ? "text" : "password"}
