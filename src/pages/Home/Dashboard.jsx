@@ -27,7 +27,7 @@ const Dashboard = () => {
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     
                     <div>
-                        <h1 className=" text-black font-semibold">Hi, {walletName}</h1>
+                        <h1 className="text-[18px] text-black font-semibold">Hi, {walletName}</h1>
                         <p className="text-[12px] text-[#4a5053] -mt-1">Mainnet</p>
                     </div>
 
