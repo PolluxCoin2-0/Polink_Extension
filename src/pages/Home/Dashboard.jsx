@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { IoEye } from "react-icons/io5";
+import { IoCopyOutline } from "react-icons/io5";
 
 const Dashboard = () => {
 
@@ -21,12 +22,12 @@ const Dashboard = () => {
         <div className="w-[350px] h-[600px] mx-auto text-white">
 
             {/* Header Section */}
-            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[224px] text-white rounded-b-[40px] items-center justify-between p-6">
+            <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[224px] text-white rounded-b-[40px] p-6">
                 <div className="flex justify-between">
                     {/* <img src="/path-to-avatar.png" alt="User Avatar" className="w-12 h-12 rounded-full" /> */}
                     
                     <div>
-                        <h1 className="text-xl text-black font-semibold">Hi, {walletName}</h1>
+                        <h1 className="text- text-black font-semibold">Hi, {walletName}</h1>
                         <p className="text-sm text-[#4a5053]">Mainnet</p>
                     </div>
 
@@ -50,10 +51,17 @@ const Dashboard = () => {
 
                 {/* Wallet Address */}
 
-                <div className="flex justify-center">
-                    <p className="bg-[#fef2d0]  text-black text-sm rounded-lg px-2">dfvsdfcfsdcssvf.....</p>
-
+                <div className="inline-flex w-full justify-center">
+                    <div className="bg-[#fef2d0] rounded-xl px-4  flex items-center gap-2">
+                    <p className="text-black text-sm">dfvsdfcfsdcssvf.....
+                    </p>
+                    <IoCopyOutline color="black" />
+                    </div>
+                    
+                    
                 </div>
+
+
 
 
                 {/* Energy and Bandwidth Section */}
