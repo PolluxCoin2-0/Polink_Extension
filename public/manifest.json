@@ -17,12 +17,8 @@
     }
   ],
 
-  "icons": {
-    "16": "icons/logo.png",
-    "48": "icons/logo.png",
-    "128": "icons/logo.png",
-    "512": "icons/logo.png"
-  },
+
+
   "permissions": [
     "storage",
     "tabs",
