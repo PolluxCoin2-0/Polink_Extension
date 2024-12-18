@@ -19,6 +19,7 @@ const Dashboard = () => {
 
     return (
         <div className="w-[350px] h-[600px] mx-auto text-white">
+
             {/* Header Section */}
             <div className="bg-gradient-to-b from-[#ffff] to-[#FFDF84] w-[350px] h-[224px] text-white rounded-b-[40px] items-center justify-between p-6">
                 <div className="flex justify-between">
@@ -46,6 +47,14 @@ const Dashboard = () => {
                     <p className="text-2xl text-black font-extrabold">800000.32</p>
                     <p className="text-xs mt-2 font-semibold text-black">$10548.45</p>
                 </div>
+
+                {/* Wallet Address */}
+
+                <div className="flex justify-center">
+                    <p className="bg-[#fef2d0]  text-black text-sm rounded-lg px-2">dfvsdfcfsdcssvf.....</p>
+
+                </div>
+
 
                 {/* Energy and Bandwidth Section */}
 
