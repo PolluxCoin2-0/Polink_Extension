@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { IoEye } from "react-icons/io5";
 
 const Dashboard = () => {
 
@@ -25,7 +26,7 @@ const Dashboard = () => {
                     
                     <div>
                         <h1 className="text-xl text-black font-semibold">Hi, {walletName}</h1>
-                        <p className="text-sm text-black">Mainnet</p>
+                        <p className="text-sm text-[#4a5053]">Mainnet</p>
                     </div>
 
                     <div>
@@ -36,13 +37,14 @@ const Dashboard = () => {
                     </div>
 
                 </div>
-                <div className="items-center px-12">
-                    <p className="px-16 text-black text-sm">Total POX</p>
+                <div className="flex justify-center gap-2 items-center ">
+                    <p className="text-[#4a5053] font-semibold text-sm">Total POX</p>
+                    <IoEye color="black" />
                 </div>
 
-                <div className="flex">
-                    <p className="px-16 text-2xl text-black font-extrabold">800000.32</p>
-                    <p className="text-xs py-2 text-black">$10548.45</p>
+                <div className="flex justify-center gap-2 items-center">
+                    <p className="text-2xl text-black font-extrabold">800000.32</p>
+                    <p className="text-xs mt-2 font-semibold text-black">$10548.45</p>
                 </div>
 
                 {/* Energy and Bandwidth Section */}
