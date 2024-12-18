@@ -28,7 +28,7 @@ const Dashboard = () => {
                     
                     <div>
                         <h1 className="text- text-black font-semibold">Hi, {walletName}</h1>
-                        <p className="text-sm text-[#4a5053]">Mainnet</p>
+                        <p className="text-sm text-[#4a5053] -mt-1">Mainnet</p>
                     </div>
 
                     <div>
@@ -40,12 +40,12 @@ const Dashboard = () => {
 
                 </div>
                 <div className="flex justify-center gap-2 items-center ">
-                    <p className="text-[#4a5053] font-semibold text-sm">Total POX</p>
+                    <p className="text-[#4a5053] font-semibold text-[12px]">Total POX</p>
                     <IoEye color="black" />
                 </div>
 
                 <div className="flex justify-center gap-2 items-center">
-                    <p className="text-2xl text-black font-extrabold">800000.32</p>
+                    <p className="text-[22px] text-black font-black">800000.32</p>
                     <p className="text-xs mt-2 font-semibold text-black">$10548.45</p>
                 </div>
 
@@ -66,11 +66,11 @@ const Dashboard = () => {
 
                 {/* Energy and Bandwidth Section */}
 
-                <div className="bg-transparent py-4 grid grid-cols-2 gap-6 w-full rounded-xl">
+                <div className="bg-transparent py-[10px] grid grid-cols-2 gap-6 w-full rounded-xl">
                     <div className=" mb-2">
                         <div className="flex justify-between items-center">
-                            <span className="text-black font-semibold">Energy</span>
-                            <span className="text-black/60 text-xs">188/188k</span>
+                            <span className="text-black text-[14px] font-semibold">Energy</span>
+                            <span className="text-black/60 text-[10px]">188/188k</span>
                         </div>
                         <div className="h-2 bg-gray-300 rounded-full mb-4">
                             <div className="h-full bg-green-500 rounded-lg" style={{ width: '80%' }}></div>
@@ -80,8 +80,8 @@ const Dashboard = () => {
 
                     <div className=" mb-2">
                         <div className="flex justify-between items-center">
-                            <span className="text-black font-semibold">Bandwidth</span>
-                            <span className="text-black/60 text-xs">188/188k</span>
+                            <span className="text-black text-[14px] font-semibold">Bandwidth</span>
+                            <span className="text-black/60 text-[10px]">188/188k</span>
                         </div>
                         <div className="h-2 bg-gray-300 rounded-full mb-4">
                             <div className="h-full bg-blue-500 rounded-lg" style={{ width: '60%' }}></div>
@@ -135,17 +135,17 @@ const Dashboard = () => {
             <div className="p-6 mt-4 space-y-2"></div>
             <div className="flex justify-center gap-4">
                 <button
-                    className={`${showAssets ? 'bg-[#FFE086]' : 'bg-white'} h-8 w-24 rounded-2xl text-white hover:brightness-90 flex flex-col items-center`}
+                    className={`${showAssets ? 'bg-[#FFE086]' : 'bg-white'} h-6 w-24 rounded-2xl text-white hover:brightness-90 flex flex-col items-center`}
                     onClick={() => setShowAssets(true)}
                 >
-                    <span className="block text-[13px] text-black font-semibold p-2">Assets</span>
+                    <span className="block text-[13px] text-black font-semibold p-1">Assets</span>
                 </button>
 
                 <button
-                    className={`${!showAssets ? 'bg-[#FFE086]' : 'bg-white'} h-8 w-24 rounded-2xl text-white hover:brightness-90 flex flex-col items-center`}
+                    className={`${!showAssets ? 'bg-[#FFE086]' : 'bg-white'} h-6 w-24 rounded-2xl text-white hover:brightness-90 flex flex-col items-center`}
                     onClick={() => setShowAssets(false)}
                 >
-                    <span className="block text-[13px] text-black font-semibold p-2">Collectibles</span>
+                    <span className="block text-[13px] text-black font-semibold p-1">Collectibles</span>
                 </button>
             </div>
 
