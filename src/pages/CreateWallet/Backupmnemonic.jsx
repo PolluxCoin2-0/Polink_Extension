@@ -423,7 +423,7 @@ const BackupMnemonic = () => {
     };
 
     const copyToClipboard = () => {
-        toast.success("Mnemonic copied to clipboard!");
+        // toast.success("Mnemonic copied to clipboard!");
         navigator.clipboard.writeText(mnemonic).then(() => {
             toast.success("Mnemonic copied to clipboard!");
         });
@@ -484,7 +484,7 @@ const BackupMnemonic = () => {
             </button>
 
             {isQrVisible && (
-                <div className="fixed inset-0 bg-transparent w-full from-red-400 to-yellow-200 bg-opacity-80 backdrop-blur-md flex items-center justify-center">
+                <div className="fixed inset-0 bg-transparent w-full bg-opacity-80 backdrop-blur-md flex items-center justify-center">
                     <div className="bg-[#ffff] bg-opacity-20 text-white p-6 rounded-lg relative max-w-[90%] w-[300px] text-center">
                         <h2 className="text-lg text-black font-bold mb-4">Mnemonic QR Code</h2>
                         <div className="flex items-center justify-center">

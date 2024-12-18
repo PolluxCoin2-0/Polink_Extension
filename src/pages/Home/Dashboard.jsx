@@ -135,16 +135,16 @@ const Dashboard = () => {
 
                     {/* POX */}
 
-                    <div className="text-black bg-white rounded-xl px-6 py-2">
+                    <div className="text-black bg-white rounded-xl px-4">
 
                         <div className="flex justify-between items-center">
-                            <div className="flex items-center space-x-2">
+                            <div className="flex items-center mt-2 space-x-2">
                                 <div>
                                     <img src="../images/poxtoken.svg" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
                                 </div>
                                 <div className="text-left">
                                     <p className="text-[14px] font-semibold">POX</p>
-                                    <p className="text-[12px] text-gray-400">$2.1834534540</p>
+                                    <p className="text-[12px] text-gray-400">$2.1834</p>
                                 </div>
                             </div>
                             <div className="text-right">
@@ -153,23 +153,23 @@ const Dashboard = () => {
                             </div>
                         </div>
 
-                        <div className="flex justify-between items-center">
-                            <p className="flex justify-between text-[12px] items-center text-sm">Available: <p className="text-gray-400">1100000.02210</p></p>
+                        <div className="flex justify-between mt-2 items-center">
+                            <p className="flex justify-between text-[12px] items-center]">Available: <p className="text-gray-400">1100000.02210</p></p>
                             <p className="text-[12px]">Stake: 25</p>
                         </div>
                     </div>
 
                     {/* USDX */}
-                    <div className="text-black bg-white rounded-xl px-6 py-2">
+                    <div className="text-black bg-white rounded-xl px-4">
 
                         <div className="flex justify-between items-center">
-                            <div className="flex items-center space-x-2">
+                            <div className="flex items-center mt-2 space-x-2">
                                 <div>
-                                    <img src="../images/uvitoken.png" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
+                                    <img src="../images/usdxtoken.svg" alt="Send Avatar" className="w-10 h-10 mt-[1px]" />
                                 </div>
                                 <div className="text-left">
                                     <p className="text-[14px] font-semibold">USDX</p>
-                                    <p className="text-[12px] text-gray-400">$2.1834534540</p>
+                                    <p className="text-[12px] text-gray-400">$2.1830</p>
                                 </div>
                             </div>
                             <div className="text-right">
@@ -178,8 +178,8 @@ const Dashboard = () => {
                             </div>
                         </div>
 
-                        <div className="flex justify-between items-center">
-                            <p className="flex justify-between text-[12px] items-center text-sm">Available: <p className="text-gray-400">1100000.02210</p></p>
+                        <div className="flex justify-between mt-2 items-center">
+                            <p className="flex justify-between text-[12px] items-center">Available: <p className="text-gray-400">1100000.02210</p></p>
                             <p className="text-[12px]">Stake: 25</p>
                         </div>
                     </div>
