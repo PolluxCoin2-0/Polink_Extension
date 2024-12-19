@@ -357,12 +357,12 @@ const Dashboard = () => {
                             </div>
                             <div className="text-right">
                                 <p className="text-[14px] font-semibold">{isHidden ? "****" : "49.054541"}</p>
-                                <p className="text-[12px] text-gray-400">{isHidden ? "****" : "$1.00"}</p>
+                                <p className="text-[12px] text-gray-400">{isHidden ? "***" : "$1.00"}</p>
                             </div>
                         </div>
                         <div className="flex justify-between mt-2 items-center">
                             <p className="text-[12px]">Available: {isHidden ? "****" : "1100000.02210"}</p>
-                            <p className="text-[12px]">Stake: {isHidden ? "****" : "25"}</p>
+                            <p className="text-[12px]">Stake: {isHidden ? "**" : "25"}</p>
                         </div>
                     </div>
 
@@ -377,12 +377,12 @@ const Dashboard = () => {
                             </div>
                             <div className="text-right">
                                 <p className="text-[14px] font-semibold">{isHidden ? "****" : "49.054541"}</p>
-                                <p className="text-[12px] text-gray-400">{isHidden ? "****" : "$1.00"}</p>
+                                <p className="text-[12px] text-gray-400">{isHidden ? "***" : "$1.00"}</p>
                             </div>
                         </div>
                         <div className="flex justify-between mt-2 items-center">
                             <p className="text-[12px]">Available: {isHidden ? "****" : "1100000.02210"}</p>
-                            <p className="text-[12px]">Stake: {isHidden ? "****" : "25"}</p>
+                            <p className="text-[12px]">Stake: {isHidden ? "**" : "25"}</p>
                         </div>
                     </div>
                 </div>
