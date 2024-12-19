@@ -1329,7 +1329,7 @@ const BackupMnemonic = () => {
     return walletName ? localStorage.getItem(walletName) : null;
   };
 
-  const generateKeys = (mnemonic: string) => {
+  const generateKeys = (mnemonic) => {
     const seed = mnemonicToSeedSync(mnemonic);
     const root = ec.keyFromPrivate(seed.slice(0, 32).toString("hex")); // Generate root key pair
     const privateKey = root.getPrivate("hex");
@@ -1339,7 +1339,7 @@ const BackupMnemonic = () => {
     return { privateKey, publicKey, poxAddressHex };
   };
 
-  const storeEncryptedKeys = (mnemonic: string) => {
+  const storeEncryptedKeys = (mnemonic) => {
     const hashedPassword = getHashedPassword();
     if (!hashedPassword) {
       toast.error("Password not found. Please create a wallet first.");
