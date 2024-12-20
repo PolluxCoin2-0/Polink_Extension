@@ -965,8 +965,9 @@ const BackupMnemonic = () => {
     const { privateKey, publicKey, poxAddressHex } = generateKeys(mnemonic);
     const encryptedPrivateKey = CryptoJS.AES.encrypt(privateKey, hashedPassword).toString();
     const encryptedPublicKey = CryptoJS.AES.encrypt(publicKey, hashedPassword).toString();
+    const encryptedMnemonic = CryptoJS.AES.encrypt(mnemonic, hashedPassword).toString();
 
-    localStorage.setItem("mnemonic", mnemonic);
+    localStorage.setItem("encryptedMnemonic", encryptedMnemonic);
     localStorage.setItem("encryptedPrivateKey", encryptedPrivateKey);
     localStorage.setItem("encryptedPublicKey", encryptedPublicKey);
     localStorage.setItem("poxAddress", poxAddressHex);
