@@ -71,11 +71,18 @@ import VerifyMnemonic from "./pages/CreateWallet/VerifyMnemonic";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Dashboard from "./pages/Home/Dashboard";
+// import  PoxWeb from 'polluxweb'
+// import * as tronweb from 'tronweb'
 
 const App = () => {
   const [isWalletCreated, setIsWalletCreated] = useState(false);
 
 
+//   const PoxWebs = new tronweb ({
+//     fullHost: 'https://fullnode.poxscan.io/',
+// })
+
+//   console.log({PoxWebs});
   
 
   useEffect(() => {
