@@ -218,15 +218,21 @@ import { IoCopyOutline } from "react-icons/io5";
 
 const Dashboard = () => {
     const [walletName, setWalletName] = useState("");
+    const [poxAddressBase58, setpoxAddressBase58] = useState("");
     const [showAssets, setShowAssets] = useState(true);
     const [isHidden, setIsHidden] = useState(false); // State to toggle visibility
-
+    
     useEffect(() => {
         // Retrieve wallet name from localStorage
         const storedWalletName = localStorage.getItem("walletName");
         if (storedWalletName) {
             setWalletName(storedWalletName);
         }
+        const storedpoxAddressBase58 = localStorage.getItem("poxAddressBase58");
+        if (storedpoxAddressBase58) {
+            setpoxAddressBase58(storedpoxAddressBase58);
+        }
+
     }, []);
 
     return (
@@ -263,7 +269,7 @@ const Dashboard = () => {
                 {/* Wallet Address */}
                 <div className="inline-flex w-full justify-center">
                     <div className="bg-[#fef2d0] rounded-xl px-4 flex items-center gap-2">
-                        <p className="text-black text-sm">dfvsdfcfsdcssvf.....</p>
+                        <p className="text-black text-sm">{poxAddressBase58}...</p>
                         <IoCopyOutline color="black" />
                     </div>
                 </div>
